@@ -1,0 +1,1766 @@
+[
+    {
+        "type": "Failed Login Burst",
+        "severity": "High",
+        "username": "Unknown",
+        "count": 43,
+        "description": "43 failed login attempts detected for user 'Unknown'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 16:24:13",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 16:19:54",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 16:16:49",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 16:15:55",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 16:12:48",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 16:09:53",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 16:01:49",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 16:00:56",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 15:49:43",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 15:46:49",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 15:41:56",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 15:39:27",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 15:32:41",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 15:30:19",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 15:29:04",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 15:28:59",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 15:28:58",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 15:28:56",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 15:28:54",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 15:22:38",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 15:17:41",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 15:17:32",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 15:16:08",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 15:02:32",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 15:02:31",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 14:58:49",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 14:53:38",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 14:53:37",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 14:52:35",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 14:52:32",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 14:47:42",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 14:47:34",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 14:47:29",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "zxcvmanish",
+        "timestamp": "2026-02-26 14:47:29",
+        "description": "Privilege escalation detected for user 'zxcvmanish'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "zxcvmanish",
+        "timestamp": "2026-02-26 14:47:29",
+        "description": "Privilege escalation detected for user 'zxcvmanish'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 14:47:16",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 14:47:14",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 14:47:14",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 13:00:02",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 13:00:00",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 13:00:00",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 12:59:55",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 12:59:46",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "DWM-2",
+        "timestamp": "2026-02-26 12:59:45",
+        "description": "Privilege escalation detected for user 'DWM-2'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "DWM-2",
+        "timestamp": "2026-02-26 12:59:45",
+        "description": "Privilege escalation detected for user 'DWM-2'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 12:58:48",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 12:55:22",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 12:43:49",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 12:40:45",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 12:40:22",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 12:24:48",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 12:24:47",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 12:21:07",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 12:07:25",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 12:07:24",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 12:06:07",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 12:05:38",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:58:50",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:52:43",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:51:44",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:51:31",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:51:28",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:51:27",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:42:48",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:41:33",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:40:53",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:39:45",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:39:42",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:38:17",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:36:55",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:36:35",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:36:28",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:36:20",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:34:59",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:34:58",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:33:46",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:33:12",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:30:53",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:30:52",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:30:52",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:30:52",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:30:51",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:30:01",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:29:32",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:29:19",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:29:19",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:29:17",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:29:15",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:29:15",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:29:14",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:29:14",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "zxcvmanish",
+        "timestamp": "2026-02-26 11:29:13",
+        "description": "Privilege escalation detected for user 'zxcvmanish'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "zxcvmanish",
+        "timestamp": "2026-02-26 11:29:13",
+        "description": "Privilege escalation detected for user 'zxcvmanish'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:59",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:53",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:53",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:52",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:51",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:51",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:51",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:51",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:48",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:47",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:47",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:47",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:47",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:47",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:47",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:47",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:47",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:47",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:47",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:47",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:46",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:46",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:46",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:46",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:46",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:46",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:46",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:46",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:46",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:46",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:45",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:45",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:45",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:45",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:45",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:45",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:45",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:45",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:45",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:45",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:45",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:45",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:45",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:45",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:45",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "DWM-1",
+        "timestamp": "2026-02-26 11:28:45",
+        "description": "Privilege escalation detected for user 'DWM-1'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "DWM-1",
+        "timestamp": "2026-02-26 11:28:45",
+        "description": "Privilege escalation detected for user 'DWM-1'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:45",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "NETWORK",
+        "timestamp": "2026-02-26 11:28:45",
+        "description": "Privilege escalation detected for user 'NETWORK'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "LOCAL",
+        "timestamp": "2026-02-26 11:28:45",
+        "description": "Privilege escalation detected for user 'LOCAL'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:28:45",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:44",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:35",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:34",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:26",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:08",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:08",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:07",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:07",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:06",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:06",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:06",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:05",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:02",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:00",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:00",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:00",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:00",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:00",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:00",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:00",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:00",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:00",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:00",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:00",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:00",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:00",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:27:00",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:59",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:59",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:59",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:59",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:59",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:59",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:59",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:59",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:59",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:58",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:58",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:58",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:58",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:58",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:58",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:58",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:58",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:58",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:58",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:58",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:58",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:58",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "DWM-1",
+        "timestamp": "2026-02-26 11:26:58",
+        "description": "Privilege escalation detected for user 'DWM-1'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "DWM-1",
+        "timestamp": "2026-02-26 11:26:58",
+        "description": "Privilege escalation detected for user 'DWM-1'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:58",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "NETWORK",
+        "timestamp": "2026-02-26 11:26:58",
+        "description": "Privilege escalation detected for user 'NETWORK'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "LOCAL",
+        "timestamp": "2026-02-26 11:26:58",
+        "description": "Privilege escalation detected for user 'LOCAL'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-26 11:26:58",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 22:22:03",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 22:21:08",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 22:21:07",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 22:21:07",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 22:21:05",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 22:19:56",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 22:16:10",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 22:09:32",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 22:02:16",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 21:57:13",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 21:57:12",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 21:49:47",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 21:49:37",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 21:49:32",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 21:49:32",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 21:49:31",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 21:49:21",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 21:44:16",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 21:42:39",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 21:39:32",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 21:31:18",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 21:22:47",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 21:16:03",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 21:14:15",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 21:09:19",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 21:09:19",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 21:09:19",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 21:01:36",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 21:01:28",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 21:00:43",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 20:59:42",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 20:59:38",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 20:55:08",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 20:55:08",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 20:54:21",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 20:54:21",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 20:54:19",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 20:54:18",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "zxcvmanish",
+        "timestamp": "2026-02-25 20:54:18",
+        "description": "Privilege escalation detected for user 'zxcvmanish'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "zxcvmanish",
+        "timestamp": "2026-02-25 20:54:18",
+        "description": "Privilege escalation detected for user 'zxcvmanish'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 20:54:08",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 20:53:01",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 20:52:48",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 19:36:35",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "DWM-6",
+        "timestamp": "2026-02-25 19:36:35",
+        "description": "Privilege escalation detected for user 'DWM-6'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "DWM-6",
+        "timestamp": "2026-02-25 19:36:35",
+        "description": "Privilege escalation detected for user 'DWM-6'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 19:35:53",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 19:31:33",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 19:29:20",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 19:27:35",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 19:27:02",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    },
+    {
+        "type": "Privilege Escalation",
+        "severity": "High",
+        "username": "SYSTEM",
+        "timestamp": "2026-02-25 19:24:50",
+        "description": "Privilege escalation detected for user 'SYSTEM'."
+    }
+]
