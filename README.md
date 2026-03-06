@@ -48,7 +48,7 @@ ai_anomaly_detection/
 
 ## Features
 - Automatic anomaly detection using Machine Learning
-- Detects suspicious login behavior, IP anomalies, request spikes, etc.
+- Detects suspicious login behavior, IP anomalies, request spikes, etc. (will be added later)
 - Real-time alerting based on anomaly score
 - Dashboard for monitoring anomalies
 - API for integrating the model with other applications
