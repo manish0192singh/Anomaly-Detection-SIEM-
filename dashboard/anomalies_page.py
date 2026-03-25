@@ -1,12 +1,18 @@
 import streamlit as st
-from data_loader import load_anomalies
+import pandas as pd
 
 def anomalies_page():
-    st.title("🚨 Anomaly Detection Results")
 
-    anomalies = load_anomalies()
+    st.title("ML Anomaly Detection")
 
-    st.subheader("Detected Anomalies")
-    st.dataframe(anomalies, use_container_width=True)
+    try:
+        df = pd.read_csv("data/anomalies.csv")
 
-    st.info("Higher anomaly score means higher risk.")
+        anomalies = df[df["anomaly"] == -1]
+
+        st.write("Total Anomalies:", len(anomalies))
+
+        st.dataframe(anomalies)
+
+    except:
+        st.warning("No anomaly data found.")

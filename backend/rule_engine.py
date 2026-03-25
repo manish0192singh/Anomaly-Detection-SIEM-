@@ -13,9 +13,7 @@ class RuleEngine:
         df["timestamp"] = pd.to_datetime(df["timestamp"], errors="ignore")
         return df
 
-    # ----------------------------------------------------
-    # RULE 1: Multiple failed login attempts (brute-force)
-    # ----------------------------------------------------
+
     def detect_failed_login_bursts(self, df):
         alerts = []
         failed = df[df["event_type_clean"] == "Failed Login"]
@@ -33,9 +31,7 @@ class RuleEngine:
                 })
         return alerts
 
-    # ----------------------------------------------------
-    # RULE 2: Privilege escalation detection
-    # ----------------------------------------------------
+
     def detect_privilege_escalation(self, df):
         alerts = []
         priv = df[df["event_type_clean"] == "Privilege Escalation"]
@@ -50,9 +46,8 @@ class RuleEngine:
             })
         return alerts
 
-    # ----------------------------------------------------
-    # RULE 3: Logins at unusual hours (12 AM – 5 AM)
-    # ----------------------------------------------------
+
+
     def detect_odd_hour_logins(self, df):
         alerts = []
         login_events = df[df["event_type_clean"] == "Successful Login"]
@@ -73,9 +68,8 @@ class RuleEngine:
                 })
         return alerts
 
-    # ----------------------------------------------------
-    # RUN ALL RULES
-    # ----------------------------------------------------
+
+
     def run_rules(self):
         df = self.load_logs()
 
