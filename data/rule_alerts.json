@@ -2,2339 +2,873 @@
     {
         "type": "Failed Login Burst",
         "severity": "High",
-        "username": "LENOVOIDEAPAD$",
-        "count": 11,
-        "description": "11 failed login attempts detected for user 'LENOVOIDEAPAD$'."
+        "username": "Unknown",
+        "description": "8 failed login attempts for 'Unknown'.",
+        "timestamp": "2026-03-30 14:41:36.377785",
+        "count": 8
     },
     {
-        "type": "Failed Login Burst",
+        "type": "Multiple IP Addresses",
         "severity": "High",
         "username": "Unknown",
-        "count": 46,
-        "description": "46 failed login attempts detected for user 'Unknown'."
+        "description": "'Unknown' accessed from 52 different IPs.",
+        "timestamp": "2026-03-30 14:41:36.401083",
+        "count": 52
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:57:23",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Rapid Successive Logins",
+        "severity": "Medium",
+        "username": "LENOVOIDEAPAD$",
+        "description": "'LENOVOIDEAPAD$' had 5 logins within 60-second windows.",
+        "timestamp": "2026-03-30 14:41:36.407528",
+        "count": 5
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:57:21",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-30T08:38:43.0608926Z\r\nAdditional Information: 2026-03-30T08:38:43.0600714Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-30 14:08:43",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:54",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-30T08:38:43.0536759Z\r\nAdditional Information: 2026-03-30T08:38:43.0526694Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-30 14:08:43",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:51",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-30T08:38:43.0511609Z\r\nAdditional Information: 2026-03-30T08:38:44.6417166Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-30 14:08:43",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:48",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-30T08:37:47.5000000Z\r\nAdditional Information: 2026-03-29T18:15:31.1503446Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-30 14:07:47",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:47",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-29T16:14:57.5000000Z\r\nAdditional Information: 2026-03-29T14:32:52.7691563Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-29 21:44:57",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:47",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-29T13:26:56.5000000Z\r\nAdditional Information: 2026-03-29T13:05:58.2388236Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-29 18:56:56",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:46",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-29T10:41:48.4860582Z\r\nAdditional Information: 2026-03-29T10:41:48.4850865Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-29 16:11:48",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:45",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-29T10:41:48.4840336Z\r\nAdditional Information: 2026-03-29T10:41:48.4831161Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-29 16:11:48",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "zxcvmanish",
-        "timestamp": "2026-03-13 11:56:45",
-        "description": "Privilege escalation detected for user 'zxcvmanish'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-29T10:41:48.4809391Z\r\nAdditional Information: 2026-03-29T10:41:51.7469325Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-29 16:11:48",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "zxcvmanish",
-        "timestamp": "2026-03-13 11:56:45",
-        "description": "Privilege escalation detected for user 'zxcvmanish'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-29T10:40:54.5000000Z\r\nAdditional Information: 2026-03-28T18:12:54.9903207Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-29 16:10:54",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:44",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-28T17:34:33.5000000Z\r\nAdditional Information: 2026-03-28T17:33:09.7878105Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-28 23:04:33",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:44",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-28T16:43:59.5000000Z\r\nAdditional Information: 2026-03-28T16:11:23.4503860Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-28 22:13:59",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:44",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-28T14:45:08.5000000Z\r\nAdditional Information: 2026-03-27T20:08:02.0926635Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-28 20:15:08",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:43",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T19:33:00.8655467Z\r\nAdditional Information: 2026-03-27T19:33:00.8648784Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-28 01:03:00",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:42",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T19:32:15.5000000Z\r\nAdditional Information: 2026-03-27T17:36:16.6148458Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-28 01:02:15",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:41",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T16:47:16.2365971Z\r\nAdditional Information: 2026-03-27T16:47:16.2350099Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-27 22:17:16",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:41",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T16:47:16.2350099Z\r\nAdditional Information: 2026-03-27T16:47:16.2343255Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-27 22:17:16",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:41",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T16:47:16.2343255Z\r\nAdditional Information: 2026-03-27T16:47:18.9506044Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-27 22:17:16",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:38",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T16:46:21.5000000Z\r\nAdditional Information: 2026-03-27T15:42:24.9012212Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-27 22:16:21",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:38",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T14:10:44.5000000Z\r\nAdditional Information: 2026-03-27T12:54:33.6511614Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-27 19:40:44",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:38",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T11:52:22.5000000Z\r\nAdditional Information: 2026-03-27T11:41:03.1547174Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-27 17:22:22",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:37",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T11:24:58.5000000Z\r\nAdditional Information: 2026-03-27T10:19:20.4139285Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-27 16:54:58",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:37",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T10:18:50.5000000Z\r\nAdditional Information: 2026-03-27T09:07:14.5693025Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-27 15:48:50",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:37",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T09:03:49.5000000Z\r\nAdditional Information: 2026-03-27T09:02:52.3226133Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-27 14:33:49",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:37",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T07:55:22.5000000Z\r\nAdditional Information: 2026-03-27T07:54:50.5419075Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-27 13:25:22",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:37",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T06:50:08.5000000Z\r\nAdditional Information: 2026-03-27T03:48:46.8494887Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-27 12:20:08",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:37",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T03:38:32.5000000Z\r\nAdditional Information: 2026-03-26T18:52:51.5087220Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-27 09:08:32",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:37",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-26T18:38:15.5000000Z\r\nAdditional Information: 2026-03-26T18:37:40.1047110Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-27 00:08:15",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:37",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-26T17:11:41.5000000Z\r\nAdditional Information: 2026-03-26T16:45:18.0338342Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-26 22:41:41",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:37",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-26T15:59:13.5000000Z\r\nAdditional Information: 2026-03-26T15:54:27.1325308Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-26 21:29:13",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:37",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-26T14:17:03.5000000Z\r\nAdditional Information: 2026-03-26T13:08:28.5555210Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-26 19:47:03",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:37",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-26T10:21:50.5000000Z\r\nAdditional Information: 2026-03-26T08:58:56.0259285Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-26 15:51:50",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:37",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Installation Successful: Windows successfully installed the following update: Update for Microsoft Defender Antivirus an",
+        "timestamp": "2026-03-26 13:50:50",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:37",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Installation Started: Windows has started installing the following update: Update for Microsoft Defender Antivirus antim",
+        "timestamp": "2026-03-26 13:50:27",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:37",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-26T07:32:25.5000000Z\r\nAdditional Information: 2026-03-25T20:25:33.6691448Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-26 13:02:25",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:37",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-25T20:02:33.4295497Z\r\nAdditional Information: 2026-03-25T20:02:33.4292783Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-26 01:32:33",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:37",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-25T20:02:33.4148634Z\r\nAdditional Information: 2026-03-25T20:02:33.4141495Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-26 01:32:33",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:37",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-25T20:02:33.4141495Z\r\nAdditional Information: 2026-03-25T20:02:36.6622389Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-26 01:32:33",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:37",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-25T20:01:39.5000000Z\r\nAdditional Information: 2026-03-25T18:15:56.0224456Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-26 01:31:39",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:37",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-25T15:14:31.5000000Z\r\nAdditional Information: 2026-03-25T15:13:07.1047298Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-25 20:44:31",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:37",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-25T11:33:27.5000000Z\r\nAdditional Information: 2026-03-25T09:33:46.5448606Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-25 17:03:27",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:36",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-25T09:33:27.5000000Z\r\nAdditional Information: 2026-03-25T09:33:26.4454504Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-25 15:03:27",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:36",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-25T07:47:25.5000000Z\r\nAdditional Information: 2026-03-24T16:40:29.0609769Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-25 13:17:25",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:36",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-24T13:30:27.5000000Z\r\nAdditional Information: 2026-03-24T12:58:16.5214360Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-24 19:00:27",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:36",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-24T12:10:29.5000000Z\r\nAdditional Information: 2026-03-23T16:04:26.6673210Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-24 17:40:29",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:36",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-23T14:49:41.8164806Z\r\nAdditional Information: 2026-03-23T14:49:41.8154547Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-23 20:19:41",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:36",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-23T14:49:41.8109195Z\r\nAdditional Information: 2026-03-23T14:49:41.8099867Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-23 20:19:41",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:36",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-23T14:49:41.8087661Z\r\nAdditional Information: 2026-03-23T14:49:46.5659642Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-23 20:19:41",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:36",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-23T14:48:49.5000000Z\r\nAdditional Information: 2026-03-22T14:36:18.8635733Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-23 20:18:49",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:36",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-22T14:18:20.5000000Z\r\nAdditional Information: 2026-03-22T07:20:17.6894649Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-22 19:48:20",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:36",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-22T05:43:32.5000000Z\r\nAdditional Information: 2026-03-21T14:34:15.3561788Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-22 11:13:32",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:36",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-21T14:28:43.5000000Z\r\nAdditional Information: 2026-03-21T10:10:22.9250132Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-21 19:58:43",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:36",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-21T09:49:07.5000000Z\r\nAdditional Information: 2026-03-21T09:24:26.2694928Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-21 15:19:07",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:36",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-21T08:56:21.3375819Z\r\nAdditional Information: 2026-03-21T08:56:21.3359653Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-21 14:26:21",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "DWM-1",
-        "timestamp": "2026-03-13 11:56:36",
-        "description": "Privilege escalation detected for user 'DWM-1'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-21T08:56:21.3344162Z\r\nAdditional Information: 2026-03-21T08:56:21.3340328Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-21 14:26:21",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "DWM-1",
-        "timestamp": "2026-03-13 11:56:36",
-        "description": "Privilege escalation detected for user 'DWM-1'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-21T08:56:21.3333781Z\r\nAdditional Information: 2026-03-21T08:56:22.9266816Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-21 14:26:21",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:35",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-21T08:55:25.5000000Z\r\nAdditional Information: 2026-03-20T16:43:59.8399326Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-21 14:25:25",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "NETWORK",
-        "timestamp": "2026-03-13 11:56:35",
-        "description": "Privilege escalation detected for user 'NETWORK'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-20T16:01:02.5000000Z\r\nAdditional Information: 2026-03-20T15:59:32.1559947Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-20 21:31:02",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "LOCAL",
-        "timestamp": "2026-03-13 11:56:35",
-        "description": "Privilege escalation detected for user 'LOCAL'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-20T14:48:25.5000000Z\r\nAdditional Information: 2026-03-20T14:47:01.6920673Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-20 20:18:25",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:35",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-20T12:07:17.5000000Z\r\nAdditional Information: 2026-03-20T12:00:07.2681226Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-20 17:37:17",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:56:02",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-20T11:28:10.4220584Z\r\nAdditional Information: 2026-03-20T11:28:10.4210791Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-20 16:58:10",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:55:38",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-20T11:28:10.4190107Z\r\nAdditional Information: 2026-03-20T11:28:10.4183322Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-20 16:58:10",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:55:19",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-20T11:28:10.4181931Z\r\nAdditional Information: 2026-03-20T11:28:11.7082917Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-20 16:58:10",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:55:10",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-20T11:27:15.5000000Z\r\nAdditional Information: 2026-03-19T17:14:01.9410768Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-20 16:57:15",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:55:10",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-19T16:32:58.5000000Z\r\nAdditional Information: 2026-03-19T15:56:47.1948283Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-19 22:02:58",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "DWM-3",
-        "timestamp": "2026-03-13 11:55:10",
-        "description": "Privilege escalation detected for user 'DWM-3'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-19T14:03:49.5000000Z\r\nAdditional Information: 2026-03-19T12:16:26.7788279Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-19 19:33:49",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "DWM-3",
-        "timestamp": "2026-03-13 11:55:10",
-        "description": "Privilege escalation detected for user 'DWM-3'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-19T11:47:04.1567346Z\r\nAdditional Information: 2026-03-19T11:47:04.1565208Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-19 17:17:04",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:53:07",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-19T11:47:04.1510687Z\r\nAdditional Information: 2026-03-19T11:47:04.1495204Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-19 17:17:04",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:53:05",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-19T11:47:04.1442244Z\r\nAdditional Information: 2026-03-19T11:47:05.9702531Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-19 17:17:04",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:48:11",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-19T11:46:58.5000000Z\r\nAdditional Information: 2026-03-18T14:19:20.5409832Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-19 17:16:58",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:47:43",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-18T13:23:58.5000000Z\r\nAdditional Information: 2026-03-18T10:29:31.8656684Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-18 18:53:58",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:46:43",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-18T10:11:25.5000000Z\r\nAdditional Information: 2026-03-18T09:09:50.3786881Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-18 15:41:25",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:42:50",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-18T08:31:01.8983568Z\r\nAdditional Information: 2026-03-18T08:31:01.8965180Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-18 14:01:01",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "zxcvmanish",
-        "timestamp": "2026-03-13 11:42:45",
-        "description": "Privilege escalation detected for user 'zxcvmanish'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-18T08:31:01.8712359Z\r\nAdditional Information: 2026-03-18T08:31:01.8698168Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-18 14:01:01",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "zxcvmanish",
-        "timestamp": "2026-03-13 11:42:45",
-        "description": "Privilege escalation detected for user 'zxcvmanish'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-18T08:31:01.8681192Z\r\nAdditional Information: 2026-03-18T08:31:05.6379243Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-18 14:01:01",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:42:41",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-18T08:30:08.5000000Z\r\nAdditional Information: 2026-03-17T11:49:18.6356859Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-18 14:00:08",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:42:08",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-17T10:16:38.5000000Z\r\nAdditional Information: 2026-03-17T08:37:49.3776498Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-17 15:46:38",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "DWM-2",
-        "timestamp": "2026-03-13 11:42:08",
-        "description": "Privilege escalation detected for user 'DWM-2'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-17T07:29:35.5000000Z\r\nAdditional Information: 2026-03-17T06:07:40.9924298Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-17 12:59:35",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "DWM-2",
-        "timestamp": "2026-03-13 11:42:08",
-        "description": "Privilege escalation detected for user 'DWM-2'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-17T05:13:21.5000000Z\r\nAdditional Information: 2026-03-16T15:56:00.7171877Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-17 10:43:21",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:41:44",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-16T14:47:12.5000000Z\r\nAdditional Information: 2026-03-16T14:44:22.4380011Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-16 20:17:12",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:41:44",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-16T13:41:47.5000000Z\r\nAdditional Information: 2026-03-16T06:44:13.1607709Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-16 19:11:47",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:40:11",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-16T06:24:17.5165440Z\r\nAdditional Information: 2026-03-16T06:24:17.5165225Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-16 11:54:17",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:40:11",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-16T06:24:17.5155695Z\r\nAdditional Information: 2026-03-16T06:24:17.5155407Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-16 11:54:17",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:40:10",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-16T06:24:17.5146901Z\r\nAdditional Information: 2026-03-16T06:24:18.6528504Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-16 11:54:17",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:39:55",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-16T06:23:21.5000000Z\r\nAdditional Information: 2026-03-15T18:09:48.3848148Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-16 11:53:21",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:39:29",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-15T18:09:44.5000000Z\r\nAdditional Information: 2026-03-15T18:09:43.3992203Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-15 23:39:44",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:39:29",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-15T17:09:11.2777140Z\r\nAdditional Information: 2026-03-15T17:09:11.2776026Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-15 22:39:11",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:51",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-15T17:09:11.2766270Z\r\nAdditional Information: 2026-03-15T17:09:11.2763414Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-15 22:39:11",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:48",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-15T17:09:11.2756971Z\r\nAdditional Information: 2026-03-15T17:09:12.8433578Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-15 22:39:11",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:25",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-15T17:08:21.5000000Z\r\nAdditional Information: 2026-03-15T16:47:09.6237125Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-15 22:38:21",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:20",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-15T16:47:03.5000000Z\r\nAdditional Information: 2026-03-15T13:47:06.4989492Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-15 22:17:03",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:18",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-15T13:36:36.5000000Z\r\nAdditional Information: 2026-03-15T12:49:01.2148166Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-15 19:06:36",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:18",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-15T12:38:51.5000000Z\r\nAdditional Information: 2026-03-15T11:24:58.5154008Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-15 18:08:51",
+        "ip_address": "nan"
     },
     {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:17",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "zxcvmanish",
-        "timestamp": "2026-03-13 11:38:17",
-        "description": "Privilege escalation detected for user 'zxcvmanish'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "zxcvmanish",
-        "timestamp": "2026-03-13 11:38:17",
-        "description": "Privilege escalation detected for user 'zxcvmanish'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:14",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:14",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:13",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:12",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:12",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:11",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:11",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:10",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:09",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:09",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:09",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:06",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:06",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:05",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:05",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:05",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:05",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:05",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:05",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:05",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:05",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:05",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:05",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:05",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:05",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:05",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:05",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:05",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:05",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "zxcvmanish",
-        "timestamp": "2026-03-13 11:38:05",
-        "description": "Privilege escalation detected for user 'zxcvmanish'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:05",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:05",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:05",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:05",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:04",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:04",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:04",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:04",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:04",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:04",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:04",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:04",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:04",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:04",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:04",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:04",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:04",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "DWM-1",
-        "timestamp": "2026-03-13 11:38:04",
-        "description": "Privilege escalation detected for user 'DWM-1'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "DWM-1",
-        "timestamp": "2026-03-13 11:38:04",
-        "description": "Privilege escalation detected for user 'DWM-1'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:03",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "NETWORK",
-        "timestamp": "2026-03-13 11:38:03",
-        "description": "Privilege escalation detected for user 'NETWORK'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "LOCAL",
-        "timestamp": "2026-03-13 11:38:03",
-        "description": "Privilege escalation detected for user 'LOCAL'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:38:03",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:37:30",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:37:24",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:37:23",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:14:15",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:14:14",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:14:14",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:14:14",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:14:13",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 11:09:29",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 10:54:29",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 10:39:29",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 10:39:20",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 10:39:18",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 10:39:17",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 10:37:46",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 10:30:11",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 10:24:21",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "zxcvmanish",
-        "timestamp": "2026-03-13 10:24:15",
-        "description": "Privilege escalation detected for user 'zxcvmanish'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "zxcvmanish",
-        "timestamp": "2026-03-13 10:24:15",
-        "description": "Privilege escalation detected for user 'zxcvmanish'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 10:24:10",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 10:00:09",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 10:00:01",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "DWM-13",
-        "timestamp": "2026-03-13 10:00:00",
-        "description": "Privilege escalation detected for user 'DWM-13'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "DWM-13",
-        "timestamp": "2026-03-13 10:00:00",
-        "description": "Privilege escalation detected for user 'DWM-13'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 09:55:44",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 09:55:40",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 09:55:34",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "zxcvmanish",
-        "timestamp": "2026-03-13 09:55:34",
-        "description": "Privilege escalation detected for user 'zxcvmanish'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "zxcvmanish",
-        "timestamp": "2026-03-13 09:55:34",
-        "description": "Privilege escalation detected for user 'zxcvmanish'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 09:55:24",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-13 09:55:22",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 22:19:05",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 22:19:04",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 22:18:55",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "DWM-12",
-        "timestamp": "2026-03-12 22:18:55",
-        "description": "Privilege escalation detected for user 'DWM-12'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "DWM-12",
-        "timestamp": "2026-03-12 22:18:55",
-        "description": "Privilege escalation detected for user 'DWM-12'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 22:12:33",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 22:09:56",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 21:55:40",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 21:51:33",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 21:40:08",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 21:39:55",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 21:27:39",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 21:24:55",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 21:09:55",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 20:56:42",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 20:56:38",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 20:55:29",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 20:54:55",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "zxcvmanish",
-        "timestamp": "2026-03-12 20:40:09",
-        "description": "Privilege escalation detected for user 'zxcvmanish'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "zxcvmanish",
-        "timestamp": "2026-03-12 20:40:09",
-        "description": "Privilege escalation detected for user 'zxcvmanish'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 20:39:54",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 20:25:29",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 20:25:27",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 20:25:25",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 20:19:55",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 20:18:15",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 20:18:12",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "zxcvmanish",
-        "timestamp": "2026-03-12 20:18:12",
-        "description": "Privilege escalation detected for user 'zxcvmanish'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "zxcvmanish",
-        "timestamp": "2026-03-12 20:18:11",
-        "description": "Privilege escalation detected for user 'zxcvmanish'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 20:18:03",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 20:18:01",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 20:18:01",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 18:51:42",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 18:51:33",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "DWM-11",
-        "timestamp": "2026-03-12 18:51:33",
-        "description": "Privilege escalation detected for user 'DWM-11'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "DWM-11",
-        "timestamp": "2026-03-12 18:51:33",
-        "description": "Privilege escalation detected for user 'DWM-11'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 18:51:26",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 18:44:32",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 18:32:08",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 18:29:32",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 18:19:47",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 18:19:45",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 18:14:13",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "zxcvmanish",
-        "timestamp": "2026-03-12 18:12:57",
-        "description": "Privilege escalation detected for user 'zxcvmanish'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "zxcvmanish",
-        "timestamp": "2026-03-12 18:12:57",
-        "description": "Privilege escalation detected for user 'zxcvmanish'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 18:12:53",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 18:12:51",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 18:12:14",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 18:12:13",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 18:04:18",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 18:01:59",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 18:01:57",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 17:59:30",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 17:59:28",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 17:52:08",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 17:46:39",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 17:44:30",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "zxcvmanish",
-        "timestamp": "2026-03-12 17:44:26",
-        "description": "Privilege escalation detected for user 'zxcvmanish'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "zxcvmanish",
-        "timestamp": "2026-03-12 17:44:26",
-        "description": "Privilege escalation detected for user 'zxcvmanish'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 17:44:19",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 16:36:18",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 16:36:17",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 16:36:17",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 16:36:14",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 16:36:14",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 16:36:12",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 16:36:06",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "DWM-10",
-        "timestamp": "2026-03-12 16:36:06",
-        "description": "Privilege escalation detected for user 'DWM-10'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "DWM-10",
-        "timestamp": "2026-03-12 16:36:06",
-        "description": "Privilege escalation detected for user 'DWM-10'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 16:31:28",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 16:31:26",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 16:31:26",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 16:29:55",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 16:25:21",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 16:25:21",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 16:25:17",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 16:14:55",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 16:05:45",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 15:59:55",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 15:54:08",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 15:44:55",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 15:40:35",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 15:35:45",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 15:35:36",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 15:35:36",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 15:35:36",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 15:29:55",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 15:25:12",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 15:19:52",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 15:18:47",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 15:18:47",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "zxcvmanish",
-        "timestamp": "2026-03-12 14:59:57",
-        "description": "Privilege escalation detected for user 'zxcvmanish'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "zxcvmanish",
-        "timestamp": "2026-03-12 14:59:57",
-        "description": "Privilege escalation detected for user 'zxcvmanish'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 14:59:55",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 14:59:55",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 14:59:52",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 14:55:07",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 14:55:06",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 14:49:27",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 14:47:54",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 14:44:49",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 14:29:49",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 14:23:34",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 14:14:49",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 14:14:07",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 14:14:06",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 14:05:29",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:59:49",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:54:04",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:51:03",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:47:50",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:47:41",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:47:41",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:44:49",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:34:49",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:34:38",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:34:38",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:34:32",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:32:52",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:32:52",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:29:48",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:27:33",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:26:12",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:20:40",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:20:34",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:20:24",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:20:24",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:19:47",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:19:29",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:19:28",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:19:28",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:19:28",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:14:48",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:02:55",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:02:52",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 13:02:50",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 12:59:57",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 12:59:48",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 12:49:26",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 12:44:48",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 12:36:41",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 12:35:50",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 12:35:18",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 12:35:06",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 12:32:38",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 12:32:35",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 12:30:50",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 12:29:45",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 12:22:32",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 12:20:16",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
-    },
-    {
-        "type": "Privilege Escalation",
-        "severity": "High",
-        "username": "SYSTEM",
-        "timestamp": "2026-03-12 12:19:50",
-        "description": "Privilege escalation detected for user 'SYSTEM'."
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-15T11:24:52.5000000Z\r\nAdditional Information: 2026-03-15T08:24:58.0240311Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-15 16:54:52",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-15T08:24:54.5000000Z\r\nAdditional Information: 2026-03-15T08:24:53.4295642Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-15 13:54:54",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-15T07:01:39.0799684Z\r\nAdditional Information: 2026-03-15T07:01:39.0787378Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-15 12:31:39",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-15T07:01:39.0787378Z\r\nAdditional Information: 2026-03-15T07:01:39.0783186Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-15 12:31:39",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-15T07:01:39.0780439Z\r\nAdditional Information: 2026-03-15T07:01:43.6679123Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-15 12:31:39",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-15T07:00:46.5000000Z\r\nAdditional Information: 2026-03-14T14:17:33.6951989Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-15 12:30:46",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-14T13:24:28.5000000Z\r\nAdditional Information: 2026-03-14T11:26:07.6051916Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-14 18:54:28",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-14T10:34:45.5000000Z\r\nAdditional Information: 2026-03-14T10:29:36.0239402Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-14 16:04:45",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-14T10:12:49.5000000Z\r\nAdditional Information: 2026-03-14T10:05:47.0076337Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-14 15:42:49",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-14T09:28:33.5000000Z\r\nAdditional Information: 2026-03-14T07:23:14.9884172Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-14 14:58:33",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-14T07:21:45.5000000Z\r\nAdditional Information: 2026-03-13T15:44:02.8329264Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-14 12:51:45",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-13T14:36:51.5000000Z\r\nAdditional Information: 2026-03-13T13:53:49.3716847Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-13 20:06:51",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-13T13:24:40.5000000Z\r\nAdditional Information: 2026-03-13T07:04:41.4700818Z\r\n\r\nThis Ev",
+        "timestamp": "2026-03-13 18:54:40",
+        "ip_address": "nan"
     }
 ]
