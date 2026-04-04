@@ -4,67 +4,69 @@ import pandas as pd
 from datetime import datetime
 
 DATA_FILES = {
-    "Processed Logs": "data/processed_logs.csv",
+    "Processed Logs":  "data/processed_logs.csv",
     "Structured Logs": "data/structured_logs.csv",
-    "Anomalies": "data/anomalies.csv"
+    "Anomalies":       "data/anomalies.csv",
 }
 
 def get_file_info(path):
     if not os.path.exists(path):
         return None
-
-    size = os.path.getsize(path) / 1024  # KB
+    size     = os.path.getsize(path) / 1024
     modified = datetime.fromtimestamp(os.path.getmtime(path))
-
     return {
-        "size": f"{size:.2f} KB",
+        "size":     f"{size:.2f} KB",
         "modified": modified.strftime("%Y-%m-%d %H:%M:%S")
     }
 
 def data_loader_page():
     st.title("📥 Data Loader")
-    st.write("Check data status, reload datasets, and verify backend outputs.")
+    st.write("Check data status, reload datasets, and verify pipeline outputs.")
 
     st.subheader("📊 Data File Status")
 
     status_data = []
-
     for name, path in DATA_FILES.items():
         info = get_file_info(path)
-
         if info:
             status_data.append({
-                "File": name,
-                "Status": "Available ✅",
+                "File":         name,
+                "Status":       "Available ✅",
                 "Last Updated": info["modified"],
-                "Size": info["size"]
+                "Size":         info["size"]
             })
         else:
             status_data.append({
-                "File": name,
-                "Status": "Missing ❌",
+                "File":         name,
+                "Status":       "Missing ❌",
                 "Last Updated": "-",
-                "Size": "-"
+                "Size":         "-"
             })
 
     st.table(status_data)
 
-    st.subheader("🔄 Reload Data")
+    # If running on Render, show helpful message
+    if not os.path.exists("data/structured_logs.csv"):
+        st.info(
+            "💡 **No local data files found.** This is normal when running on the cloud.\n\n"
+            "To see your data:\n"
+            "1. Go to the **Dashboard** page\n"
+            "2. Click **'Get My Personal Agent'**\n"
+            "3. Download and run the file on your Windows PC\n"
+            "4. Your data will appear automatically in your personal dashboard"
+        )
+        return
 
-    selected_file = st.selectbox(
-        "Choose file to load:",
-        list(DATA_FILES.keys())
-    )
+    st.subheader("🔄 Reload Data")
+    selected_file = st.selectbox("Choose file to load:", list(DATA_FILES.keys()))
 
     if st.button("Load Selected File"):
         path = DATA_FILES[selected_file]
-
         if os.path.exists(path):
             try:
                 df = pd.read_csv(path)
                 st.success(f"{selected_file} loaded successfully!")
-                st.write(f"Showing first 20 rows of {selected_file}:")
-                st.dataframe(df.head(20))
+                st.dataframe(df.head(20), use_container_width=True)
             except Exception as e:
                 st.error(f"Error loading {selected_file}: {e}")
         else:
