@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: ai-siem-server
+    runtime: python
+    buildCommand: pip install fastapi uvicorn pydantic requests python-dotenv
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: STREAMLIT_URL
+        value: https://ai-siem-dashboard.onrender.com
+      - key: RENDER_EXTERNAL_URL
+        value: https://ai-siem-server.onrender.com
+
+  - type: web
+    name: ai-siem-dashboard
+    runtime: python
+    buildCommand: pip install streamlit pandas altair requests scikit-learn joblib
+    startCommand: streamlit run dashboard/app.py --server.port $PORT --server.address 0.0.0.0 --server.headless true
+    envVars:
+      - key: SERVER_URL
+        value: https://ai-siem-server.onrender.com
