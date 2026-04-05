@@ -39,7 +39,7 @@ MODELS_DIR = DATA_DIR / "models"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 MODELS_DIR.mkdir(parents=True, exist_ok=True)
 
-DASHBOARD_URL = f"{SERVER_URL}/view/{USER_ID}"
+DASHBOARD_URL = f"{SERVER_URL}/?user_id={USER_ID}"
 
 
 def banner():
