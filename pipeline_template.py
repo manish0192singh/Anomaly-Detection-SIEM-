@@ -39,7 +39,7 @@ MODELS_DIR = DATA_DIR / "models"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 MODELS_DIR.mkdir(parents=True, exist_ok=True)
 
-DASHBOARD_URL = f"{SERVER_URL}/view/{USER_ID}"
+DASHBOARD_URL = f"{SERVER_URL}/?user_id={USER_ID}"
 
 
 def banner():
@@ -378,13 +378,35 @@ def upload_to_dashboard(logs_df, anom_df, alerts):
     print("[5/5] Uploading data to your dashboard...")
 
     import pandas as pd
+    import math
+
+    def clean_value(v):
+        if v is None:
+            return None
+        if hasattr(v, 'isoformat'):
+            return str(v)
+        if hasattr(v, 'item'):
+            return v.item()
+        try:
+            if isinstance(v, float) and math.isnan(v):
+                return None
+        except Exception:
+            pass
+        return v
 
     def df_to_list(df, cols):
         df = df.copy()
         for c in cols:
             if c not in df.columns:
                 df[c] = None
-        return df[cols].where(pd.notnull(df[cols]), None).to_dict("records")
+        for c in df.columns:
+            if 'datetime' in str(df[c].dtype):
+                df[c] = df[c].astype(str).replace('NaT', None)
+        rows = df[cols].to_dict("records")
+        return [{k: clean_value(v) for k, v in row.items()} for row in rows]
+
+    def clean_alerts(alerts_list):
+        return [{k: clean_value(v) for k, v in alert.items()} for alert in alerts_list]
 
     log_cols  = ["timestamp","source","event_id","event_type","computer",
                  "message","username","ip_address","event_type_clean",
@@ -397,14 +419,20 @@ def upload_to_dashboard(logs_df, anom_df, alerts):
         "machine":   MACHINE,
         "logs":      df_to_list(logs_df, log_cols),
         "anomalies": df_to_list(anom_df, anom_cols),
-        "alerts":    alerts,
+        "alerts":    clean_alerts(alerts),
     }
+
+    try:
+        json.dumps(payload)
+    except Exception as e:
+        print(f"      Data formatting error: {e}")
+        return
 
     try:
         r = requests.post(
             f"{SERVER_URL}/upload",
             json=payload,
-            timeout=60,
+            timeout=120,
             headers={"Content-Type": "application/json"}
         )
         if r.status_code == 200:
@@ -415,15 +443,10 @@ def upload_to_dashboard(logs_df, anom_df, alerts):
             print(f"{'='*55}\n")
             webbrowser.open(DASHBOARD_URL)
         else:
-            print(f"      Upload failed: {r.status_code} — {r.text[:100]}")
+            print(f"      Upload failed: {r.status_code} — {r.text[:200]}")
     except Exception as e:
         print(f"      Could not reach server: {e}")
-        print(f"      Your data is saved locally at: {DATA_DIR}")
 
-
-# ══════════════════════════════════════════════════════════════════════
-# MAIN
-# ══════════════════════════════════════════════════════════════════════
 
 if __name__ == "__main__":
     banner()
