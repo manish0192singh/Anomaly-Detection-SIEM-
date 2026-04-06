@@ -28,9 +28,10 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 # ── Personal config (baked in at download time) ───────────────────────
-USER_ID    = "__USER_ID_PLACEHOLDER__"
-SERVER_URL = "__SERVER_URL_PLACEHOLDER__"
-MACHINE    = socket.gethostname()
+USER_ID        = "__USER_ID_PLACEHOLDER__"
+SERVER_URL     = "__SERVER_URL_PLACEHOLDER__"
+DASHBOARD_BASE = "__DASHBOARD_URL_PLACEHOLDER__"
+MACHINE        = socket.gethostname()
 
 # ── Local working directory ───────────────────────────────────────────
 WORK_DIR   = Path.home() / ".ai_siem" / USER_ID
@@ -39,7 +40,7 @@ MODELS_DIR = DATA_DIR / "models"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 MODELS_DIR.mkdir(parents=True, exist_ok=True)
 
-DASHBOARD_URL = f"{SERVER_URL}/?user_id={USER_ID}"
+DASHBOARD_URL = f"{DASHBOARD_BASE}/?user_id={USER_ID}"
 
 
 def banner():

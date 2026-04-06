@@ -165,6 +165,7 @@ def download(user_id: str):
     content = template_path.read_text()
     content = content.replace("__USER_ID_PLACEHOLDER__", user_id)
     content = content.replace("__SERVER_URL_PLACEHOLDER__", RENDER_URL)
+    content = content.replace("__DASHBOARD_URL_PLACEHOLDER__", STREAMLIT_URL)
     out_path = DOWNLOADS_DIR / f"pipeline_{user_id}.py"
     out_path.write_text(content)
     return FileResponse(
