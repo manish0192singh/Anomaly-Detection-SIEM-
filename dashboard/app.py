@@ -621,8 +621,8 @@ else:
                 unsafe_allow_html=True
             )
 
-    elif menu == "Logs"          and pages_loaded: logs_page()
-    elif menu == "Anomalies"     and pages_loaded: anomalies_page()
-    elif menu == "Alerts"        and pages_loaded: alerts_page()
-    elif menu == "User Behaviour"and pages_loaded: user_behaviour_page()
-    elif menu == "Settings"      and pages_loaded: settings_page()
+    elif menu == "Logs"           and pages_loaded: logs_page(logs_df)
+    elif menu == "Anomalies"      and pages_loaded: anomalies_page(anom_df)
+    elif menu == "Alerts"         and pages_loaded: alerts_page(alerts_list)
+    elif menu == "User Behaviour" and pages_loaded: user_behaviour_page(logs_df, alerts_list)
+    elif menu == "Settings"       and pages_loaded: settings_page()
