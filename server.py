@@ -6,7 +6,12 @@ from typing import List, Optional
 import sqlite3
 import uuid
 import os
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
+
+def now_ist():
+    """Return current time in IST (UTC+5:30)"""
+    IST = timezone(timedelta(hours=5, minutes=30))
+    return datetime.now(IST).strftime("%Y-%m-%dT%H:%M:%S IST")
 from pathlib import Path
 
 app = FastAPI(title="AI SIEM Server")
@@ -125,7 +130,7 @@ def root():
     return {
         "service": "AI SIEM Server",
         "status":  "running",
-        "time":    datetime.now().isoformat()
+        "time":    now_ist()
     }
 
 @app.get("/health")
@@ -135,7 +140,7 @@ def health():
 @app.get("/register")
 def register(machine: str = "unknown"):
     user_id = str(uuid.uuid4()).replace("-", "")[:12]
-    now     = datetime.now().isoformat()
+    now     = now_ist()
     conn    = get_db()
     conn.execute(
         "INSERT OR IGNORE INTO users VALUES (?,?,?,?)",
@@ -176,7 +181,7 @@ def download(user_id: str):
 
 @app.post("/upload")
 def upload(payload: UploadPayload):
-    now  = datetime.now().isoformat()
+    now  = now_ist()
     uid  = payload.user_id
     conn = get_db()
     conn.execute(

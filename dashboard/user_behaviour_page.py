@@ -110,7 +110,7 @@ def user_behaviour_page(df=None, alerts_list=None):
                     if val>=15: return "background-color:#fed7aa;color:#9a3412"
                     if val>=5:  return "background-color:#fef08a;color:#713f12"
                 return ""
-            st.dataframe(risk_df.style.applymap(highlight_risk, subset=["Risk Score"]), use_container_width=True, height=400)
+            st.dataframe(risk_df.style.map(highlight_risk, subset=["Risk Score"]), use_container_width=True, height=400)
 
     with tab3:
         st.subheader("🔍 Individual User Investigation")

@@ -87,7 +87,7 @@ def alerts_page(alerts=None):
 
     styled = filtered[display_cols].sort_values("timestamp", ascending=False)
     if "severity" in styled.columns:
-        st.dataframe(styled.style.applymap(color_severity, subset=["severity"]), use_container_width=True, height=450)
+        st.dataframe(styled.style.map(color_severity, subset=["severity"]), use_container_width=True, height=450)
     else:
         st.dataframe(styled, use_container_width=True, height=450)
 

@@ -403,7 +403,7 @@ else:
 
         # Show last upload time
         if stats:
-            last = str(stats.get("last_seen",""))[:16]
+            last = str(stats.get("last_seen",""))[:19]
             st.markdown(
                 f"<div style='font-family:JetBrains Mono,monospace;font-size:10px;"
                 f"color:#334155;text-align:center;margin-top:4px;'>"

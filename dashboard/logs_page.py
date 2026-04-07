@@ -105,7 +105,7 @@ def logs_page(df=None):
 
         styled = filtered[display_cols].sort_values("timestamp", ascending=False)
         if "event_type_clean" in styled.columns:
-            st.dataframe(styled.style.applymap(color_event, subset=["event_type_clean"]), use_container_width=True, height=500)
+            st.dataframe(styled.style.map(color_event, subset=["event_type_clean"]), use_container_width=True, height=500)
         else:
             st.dataframe(styled, use_container_width=True, height=500)
 
