@@ -71,7 +71,6 @@ user_id      = query_params.get("user_id", None)
 
 
 # ── Data fetchers (with error handling) ───────────────────────────────
-@st.cache_data(ttl=30)
 def fetch_stats(uid):
     try:
         r = requests.get(f"{SERVER_URL}/data/{uid}/stats", timeout=10)
@@ -81,7 +80,6 @@ def fetch_stats(uid):
         pass
     return {}
 
-@st.cache_data(ttl=30)
 def fetch_logs(uid):
     try:
         r = requests.get(f"{SERVER_URL}/data/{uid}/logs", timeout=30)
@@ -92,7 +90,6 @@ def fetch_logs(uid):
         pass
     return pd.DataFrame()
 
-@st.cache_data(ttl=30)
 def fetch_anomalies(uid):
     try:
         r = requests.get(f"{SERVER_URL}/data/{uid}/anomalies", timeout=30)
@@ -103,7 +100,6 @@ def fetch_anomalies(uid):
         pass
     return pd.DataFrame()
 
-@st.cache_data(ttl=30)
 def fetch_alerts(uid):
     try:
         r = requests.get(f"{SERVER_URL}/data/{uid}/alerts", timeout=30)
@@ -403,8 +399,17 @@ else:
 
         st.divider()
         if st.button("🔄 Refresh Data", use_container_width=True):
-            st.cache_data.clear()
             st.rerun()
+
+        # Show last upload time
+        if stats:
+            last = str(stats.get("last_seen",""))[:16]
+            st.markdown(
+                f"<div style='font-family:JetBrains Mono,monospace;font-size:10px;"
+                f"color:#334155;text-align:center;margin-top:4px;'>"
+                f"📡 Last sync: {last}</div>",
+                unsafe_allow_html=True
+            )
 
         st.markdown(
             "<div style='font-family:JetBrains Mono,monospace;font-size:10px;"
