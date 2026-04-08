@@ -164,12 +164,33 @@ def download(user_id: str):
     conn.close()
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
+
+    # ── Option 1: Serve pre-built .exe if available ───────────────────
+    exe_path = BASE_DIR / "downloads" / "AI_SIEM_Agent.exe"
+    if exe_path.exists():
+        # Inject user ID into exe is not possible so we serve a
+        # small launcher .py that sets the ID and calls the exe
+        launcher = (
+            f"# AI SIEM Launcher\n"
+            f"# Just run this file — it will start your personal agent\n"
+            f"import os, subprocess, sys\n"
+            f"os.environ['SIEM_USER_ID'] = '{user_id}'\n"
+            f"os.environ['SIEM_SERVER_URL'] = '{RENDER_URL}'\n"
+            f"os.environ['SIEM_DASHBOARD_URL'] = '{STREAMLIT_URL}'\n"
+            f"subprocess.run(['AI_SIEM_Agent.exe'], check=True)\n"
+        )
+        out = DOWNLOADS_DIR / f"launch_{user_id}.py"
+        out.write_text(launcher)
+        return FileResponse(path=str(out), filename="run_agent.py",
+                           media_type="text/x-python")
+
+    # ── Option 2: Serve personalised .py file ────────────────────────
     template_path = BASE_DIR / "pipeline_template.py"
     if not template_path.exists():
         raise HTTPException(status_code=500, detail="Template not found")
     content = template_path.read_text()
-    content = content.replace("__USER_ID_PLACEHOLDER__", user_id)
-    content = content.replace("__SERVER_URL_PLACEHOLDER__", RENDER_URL)
+    content = content.replace("__USER_ID_PLACEHOLDER__",       user_id)
+    content = content.replace("__SERVER_URL_PLACEHOLDER__",    RENDER_URL)
     content = content.replace("__DASHBOARD_URL_PLACEHOLDER__", STREAMLIT_URL)
     out_path = DOWNLOADS_DIR / f"pipeline_{user_id}.py"
     out_path.write_text(content)

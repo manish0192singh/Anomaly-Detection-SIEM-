@@ -28,9 +28,11 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 # ── Personal config (baked in at download time) ───────────────────────
-USER_ID        = "__USER_ID_PLACEHOLDER__"
-SERVER_URL     = "__SERVER_URL_PLACEHOLDER__"
-DASHBOARD_BASE = "__DASHBOARD_URL_PLACEHOLDER__"
+# These values are baked in when you download the file
+# OR read from environment variables when running as .exe
+USER_ID        = os.getenv("SIEM_USER_ID",       "__USER_ID_PLACEHOLDER__")
+SERVER_URL     = os.getenv("SIEM_SERVER_URL",     "__SERVER_URL_PLACEHOLDER__")
+DASHBOARD_BASE = os.getenv("SIEM_DASHBOARD_URL",  "__DASHBOARD_URL_PLACEHOLDER__")
 MACHINE        = socket.gethostname()
 
 # ── Local working directory ───────────────────────────────────────────
