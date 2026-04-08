@@ -227,9 +227,9 @@ if not user_id:
     s1, s2, s3 = st.columns(3)
     steps = [
         (s1, "1", "Click Download",
-         "Get your personal run_pipeline.py with your unique ID baked in"),
-        (s2, "2", "Run on Your PC",
-         "Run it on Windows. It collects logs, runs AI detection, uploads data"),
+         "Get your personal run_pipeline.py file with your unique ID baked in"),
+        (s2, "2", "Install & Run",
+         "Run ONE command: pip install requests pandas scikit-learn joblib pywin32 — then run the file"),
         (s3, "3", "View Dashboard",
          "Your personal dashboard opens automatically in your browser"),
     ]
@@ -284,14 +284,17 @@ if not user_id:
                     )
 
                     st.markdown(f"**Step 1** — [⬇️ Download your run_pipeline.py]({dl_url})")
-                    st.markdown("**Step 2** — Run it on your Windows PC")
+                    st.code("pip install requests pandas scikit-learn joblib pywin32", language="bash")
+                    st.markdown("**Step 2** — Run the above command in CMD (only needed once)")
+                    st.markdown("**Step 3** — Run your downloaded file:")
+                    st.code("python run_pipeline.py", language="bash")
                     st.markdown(
-                        f"**Step 3** — Your dashboard: "
+                        f"**Step 4** — Your dashboard will open automatically: "
                         f"[{dash_url}]({dash_url})"
                     )
                     st.warning(
                         "💾 **Bookmark your dashboard link!** "
-                        "It is unique to you and won't change."
+                        "It is unique to you and will never change."
                     )
                 else:
                     st.error(

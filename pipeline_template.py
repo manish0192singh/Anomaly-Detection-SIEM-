@@ -1,16 +1,20 @@
 """
-AI SIEM — Personal Pipeline
-=============================
+AI SIEM — Personal Security Agent
+===================================
 This file was generated specifically for your machine.
-Just run it — it will:
-  1. Collect your Windows Event Logs
-  2. Detect anomalies using AI
-  3. Generate security alerts
-  4. Upload your data to your personal dashboard
-  5. Open your dashboard in the browser
 
-Requirements (install once):
-    pip install pandas scikit-learn joblib requests pywin32
+STEP 1 — Install requirements (run this ONCE in CMD):
+    pip install requests pandas scikit-learn joblib pywin32
+
+STEP 2 — Run this file:
+    python run_pipeline.py
+
+That is it! The script will automatically:
+  ✅ Collect your Windows Event Logs
+  ✅ Detect threats using AI
+  ✅ Generate security alerts
+  ✅ Upload your data to your personal dashboard
+  ✅ Open your dashboard in the browser automatically
 """
 
 import os
