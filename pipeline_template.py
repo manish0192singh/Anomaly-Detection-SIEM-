@@ -9,7 +9,7 @@ STEP 1 — Install requirements (run this ONCE in CMD):
 STEP 2 — Run this file:
     python run_pipeline.py
 
-That is it! The script will automatically:
+The script will automatically:
   ✅ Collect your Windows Event Logs
   ✅ Detect threats using AI
   ✅ Generate security alerts
@@ -18,30 +18,26 @@ That is it! The script will automatically:
 """
 
 import os
-import sys
 import json
 import platform
 import socket
-import subprocess
 import webbrowser
 import requests
 import re
 import random
 import hashlib
+import math
 from datetime import datetime, timedelta
 from pathlib import Path
 
-# ── Personal config (baked in at download time) ───────────────────────
-# These values are baked in when you download the file
-# OR read from environment variables when running as .exe
-USER_ID        = os.getenv("SIEM_USER_ID",       "__USER_ID_PLACEHOLDER__")
-SERVER_URL     = os.getenv("SIEM_SERVER_URL",     "__SERVER_URL_PLACEHOLDER__")
-DASHBOARD_BASE = os.getenv("SIEM_DASHBOARD_URL",  "__DASHBOARD_URL_PLACEHOLDER__")
+# ── Personal config (baked in when you download this file) ────────────
+USER_ID        = os.getenv("SIEM_USER_ID",      "__USER_ID_PLACEHOLDER__")
+SERVER_URL     = os.getenv("SIEM_SERVER_URL",    "__SERVER_URL_PLACEHOLDER__")
+DASHBOARD_BASE = os.getenv("SIEM_DASHBOARD_URL", "__DASHBOARD_URL_PLACEHOLDER__")
 MACHINE        = socket.gethostname()
 
-# ── Local working directory ───────────────────────────────────────────
-WORK_DIR   = Path.home() / ".ai_siem" / USER_ID
-DATA_DIR   = WORK_DIR / "data"
+# ── Local folders where data is saved on your PC ─────────────────────
+DATA_DIR   = Path.home() / ".ai_siem" / USER_ID / "data"
 MODELS_DIR = DATA_DIR / "models"
 DATA_DIR.mkdir(parents=True, exist_ok=True)
 MODELS_DIR.mkdir(parents=True, exist_ok=True)
@@ -50,13 +46,14 @@ DASHBOARD_URL = f"{DASHBOARD_BASE}/?user_id={USER_ID}"
 
 
 def banner():
-    print("\n" + "="*55)
+    """Print startup information."""
+    print("\n" + "=" * 55)
     print("   AI SIEM — Personal Security Pipeline")
-    print("="*55)
+    print("=" * 55)
     print(f"   Machine  : {MACHINE}")
     print(f"   User ID  : {USER_ID}")
     print(f"   Dashboard: {DASHBOARD_URL}")
-    print("="*55 + "\n")
+    print("=" * 55 + "\n")
 
 
 # ══════════════════════════════════════════════════════════════════════
@@ -64,9 +61,14 @@ def banner():
 # ══════════════════════════════════════════════════════════════════════
 
 def collect_logs():
+    """
+    Collect Windows Event Logs from Security, System, and Application channels.
+    Falls back to demo data if pywin32 is not installed or not on Windows.
+    """
     print("[1/5] Collecting Windows Event Logs...")
     import pandas as pd
 
+    # Check if we can read real Windows logs
     windows_ok = False
     if platform.system() == "Windows":
         try:
@@ -75,10 +77,7 @@ def collect_logs():
         except ImportError:
             print("      pywin32 not found — using demo data")
 
-    if windows_ok:
-        logs = _real_logs()
-    else:
-        logs = _demo_logs()
+    logs = _real_logs() if windows_ok else _demo_logs()
 
     df = pd.DataFrame(logs).sort_values("timestamp").reset_index(drop=True)
     df.to_csv(DATA_DIR / "processed_logs.csv", index=False)
@@ -87,21 +86,28 @@ def collect_logs():
 
 
 def _real_logs():
+    """Read real Windows Event Logs using pywin32."""
     import win32evtlog, win32evtlogutil
     logs = []
+
     for channel in ["Security", "System", "Application"]:
         try:
             handle = win32evtlog.OpenEventLog(None, channel)
             flags  = (win32evtlog.EVENTLOG_BACKWARDS_READ |
                       win32evtlog.EVENTLOG_SEQUENTIAL_READ)
             count  = 0
+
             while count < 2000:
                 events = win32evtlog.ReadEventLog(handle, flags, 0)
-                if not events: break
+                if not events:
+                    break
                 for event in events:
-                    if count >= 2000: break
-                    try:    msg = win32evtlogutil.SafeFormatMessage(event, channel)
-                    except: msg = f"Event {event.EventID & 0xFFFF}"
+                    if count >= 2000:
+                        break
+                    try:
+                        msg = win32evtlogutil.SafeFormatMessage(event, channel)
+                    except Exception:
+                        msg = f"Event {event.EventID & 0xFFFF}"
                     logs.append({
                         "timestamp":  str(event.TimeGenerated),
                         "source":     channel,
@@ -114,49 +120,76 @@ def _real_logs():
             win32evtlog.CloseEventLog(handle)
         except Exception as e:
             print(f"      Warning: {channel}: {e}")
+
     return logs
 
 
 def _demo_logs():
+    """Generate realistic demo log data for non-Windows systems."""
     random.seed(42)
-    users     = ["john.smith","sarah.jones","mike.brown","lisa.white","svc_backup"]
-    computers = ["DESKTOP-001","LAPTOP-HR","SERVER-01","WORKSTATION-02"]
-    ips       = ["192.168.1.101","192.168.1.102","192.168.1.103","192.168.1.10"]
-    profiles  = [(4624,1),(4634,1),(4688,1),(4663,1),(4625,2),(4648,2),(4672,3),(4740,3)]
-    weights   = [35,25,15,10,6,4,3,2]
-    logs, base= [], datetime.now()
+
+    users     = ["john.smith", "sarah.jones", "mike.brown", "lisa.white", "svc_backup"]
+    computers = ["DESKTOP-001", "LAPTOP-HR", "SERVER-01", "WORKSTATION-02"]
+    ips       = ["192.168.1.101", "192.168.1.102", "192.168.1.103", "192.168.1.10"]
+
+    # (event_id, event_type) with weights for realistic frequency
+    profiles = [(4624,1),(4634,1),(4688,1),(4663,1),(4625,2),(4648,2),(4672,3),(4740,3)]
+    weights  = [35, 25, 15, 10, 6, 4, 3, 2]
+
+    logs = []
+    base = datetime.now()
+
     for _ in range(2000):
-        hour = random.randint(8,18) if random.random()<0.85 \
-               else random.choice(list(range(0,8))+list(range(19,24)))
-        ts   = (base-timedelta(days=random.randint(0,6))).replace(
-                    hour=hour, minute=random.randint(0,59), second=random.randint(0,59))
-        eid,etype = random.choices(profiles, weights=weights, k=1)[0]
-        u,c,ip    = random.choice(users),random.choice(computers),random.choice(ips)
-        logs.append({"timestamp":ts.strftime("%Y-%m-%d %H:%M:%S"),
-            "source":"Security" if eid in [4624,4625,4634,4672,4740,4648] else "System",
-            "event_id":eid,"event_type":etype,"computer":c,
-            "message":_msg(eid,u,ip,c)})
-    # 1 small attack
-    t = (base-timedelta(days=1)).replace(hour=23,minute=5,second=0)
+        # 85% business hours, 15% off-hours
+        hour = random.randint(8, 18) if random.random() < 0.85 \
+               else random.choice(list(range(0, 8)) + list(range(19, 24)))
+
+        ts        = (base - timedelta(days=random.randint(0, 6))).replace(
+                        hour=hour, minute=random.randint(0, 59), second=random.randint(0, 59))
+        eid, etype = random.choices(profiles, weights=weights, k=1)[0]
+        u, c, ip  = random.choice(users), random.choice(computers), random.choice(ips)
+
+        logs.append({
+            "timestamp":  ts.strftime("%Y-%m-%d %H:%M:%S"),
+            "source":     "Security" if eid in [4624,4625,4634,4672,4740,4648] else "System",
+            "event_id":   eid,
+            "event_type": etype,
+            "computer":   c,
+            "message":    _build_message(eid, u, ip, c),
+        })
+
+    # Inject 1 attack sequence (brute force → success → privilege escalation)
+    t = (base - timedelta(days=1)).replace(hour=23, minute=5, second=0)
     for i in range(6):
-        logs.append({"timestamp":(t+timedelta(seconds=i*20)).strftime("%Y-%m-%d %H:%M:%S"),
-            "source":"Security","event_id":4625,"event_type":2,"computer":"SERVER-01",
-            "message":f"An account failed to log on.\nAccount Name: {users[0]}\n"
-                      f"Source Network Address: 203.0.113.45\nFailure Reason: Wrong password"})
-    logs.append({"timestamp":(t+timedelta(seconds=140)).strftime("%Y-%m-%d %H:%M:%S"),
-        "source":"Security","event_id":4624,"event_type":1,"computer":"SERVER-01",
-        "message":f"An account was successfully logged on.\nAccount Name: {users[0]}\n"
-                  f"Source Network Address: 203.0.113.45"})
-    logs.append({"timestamp":(t+timedelta(seconds=180)).strftime("%Y-%m-%d %H:%M:%S"),
-        "source":"Security","event_id":4672,"event_type":3,"computer":"SERVER-01",
-        "message":f"Special privileges assigned.\nAccount Name: {users[0]}\n"
-                  f"Privileges: SeDebugPrivilege SeTcbPrivilege\n"
-                  f"Source Network Address: 203.0.113.45"})
+        logs.append({
+            "timestamp": (t + timedelta(seconds=i * 20)).strftime("%Y-%m-%d %H:%M:%S"),
+            "source": "Security", "event_id": 4625, "event_type": 2,
+            "computer": "SERVER-01",
+            "message": f"An account failed to log on.\nAccount Name: {users[0]}\n"
+                       f"Source Network Address: 203.0.113.45\nFailure Reason: Wrong password",
+        })
+    logs.append({
+        "timestamp": (t + timedelta(seconds=140)).strftime("%Y-%m-%d %H:%M:%S"),
+        "source": "Security", "event_id": 4624, "event_type": 1,
+        "computer": "SERVER-01",
+        "message": f"An account was successfully logged on.\nAccount Name: {users[0]}\n"
+                   f"Source Network Address: 203.0.113.45",
+    })
+    logs.append({
+        "timestamp": (t + timedelta(seconds=180)).strftime("%Y-%m-%d %H:%M:%S"),
+        "source": "Security", "event_id": 4672, "event_type": 3,
+        "computer": "SERVER-01",
+        "message": f"Special privileges assigned.\nAccount Name: {users[0]}\n"
+                   f"Privileges: SeDebugPrivilege SeTcbPrivilege\n"
+                   f"Source Network Address: 203.0.113.45",
+    })
+
     return logs
 
 
-def _msg(eid, user, ip, computer):
-    t = {
+def _build_message(eid, user, ip, computer):
+    """Build a realistic Windows Event Log message for a given event ID."""
+    templates = {
         4624: f"An account was successfully logged on.\nAccount Name: {user}\nSource Network Address: {ip}\nWorkstation Name: {computer}",
         4625: f"An account failed to log on.\nAccount Name: {user}\nSource Network Address: {ip}\nFailure Reason: Wrong password",
         4634: f"An account was logged off.\nAccount Name: {user}\nLogon Type: 2",
@@ -166,7 +199,7 @@ def _msg(eid, user, ip, computer):
         4648: f"Explicit credential logon.\nAccount Name: {user}\nTarget Server: {computer}\nNetwork Address: {ip}",
         4740: f"A user account was locked out.\nAccount Name: {user}\nCaller Computer: {computer}",
     }
-    return t.get(eid, f"System event {eid} on {computer} by {user}")
+    return templates.get(eid, f"System event {eid} on {computer} by {user}")
 
 
 # ══════════════════════════════════════════════════════════════════════
@@ -174,6 +207,10 @@ def _msg(eid, user, ip, computer):
 # ══════════════════════════════════════════════════════════════════════
 
 def preprocess():
+    """
+    Clean raw logs and extract useful fields:
+    username, IP address, event type label, and time features.
+    """
     print("[2/5] Preprocessing logs...")
     import pandas as pd
 
@@ -181,13 +218,16 @@ def preprocess():
     df["message"]   = df["message"].astype(str)
     df["timestamp"] = pd.to_datetime(df["timestamp"], errors="coerce")
 
+    # Extract fields from raw message text using regex
     df["username"]         = df["message"].apply(_extract_username)
     df["ip_address"]       = df["message"].apply(_extract_ip)
     df["event_type_clean"] = df["event_id"].apply(_extract_event_type)
-    df["hour"]             = df["timestamp"].dt.hour
-    df["day_of_week"]      = df["timestamp"].dt.dayofweek
-    df["is_night"]         = df["hour"].apply(lambda h: int(h>=22 or h<=5))
-    df["is_weekend"]       = df["day_of_week"].isin([5,6]).astype(int)
+
+    # Add time features for ML model
+    df["hour"]       = df["timestamp"].dt.hour
+    df["day_of_week"]= df["timestamp"].dt.dayofweek
+    df["is_night"]   = df["hour"].apply(lambda h: int(h >= 22 or h <= 5))
+    df["is_weekend"] = df["day_of_week"].isin([5, 6]).astype(int)
 
     df.to_csv(DATA_DIR / "structured_logs.csv", index=False)
     print(f"      Structured {len(df)} log entries ✓")
@@ -195,15 +235,17 @@ def preprocess():
 
 
 def _extract_username(msg):
-    for pat in [r'Account Name:\s*([A-Za-z0-9_\\$\-\.]+)',
-                r'user(?:name)?\s*[:=]\s*([A-Za-z0-9_\\$\-\.]+)']:
-        m = re.search(pat, str(msg), re.IGNORECASE)
-        if m and m.group(1) not in ("-","$",""):
+    """Extract username from log message text using regex."""
+    for pattern in [r'Account Name:\s*([A-Za-z0-9_\\$\-\.]+)',
+                    r'user(?:name)?\s*[:=]\s*([A-Za-z0-9_\\$\-\.]+)']:
+        m = re.search(pattern, str(msg), re.IGNORECASE)
+        if m and m.group(1) not in ("-", "$", ""):
             return m.group(1)
     return "Unknown"
 
 
 def _extract_ip(msg):
+    """Extract IP address from log message. Ignores loopback addresses."""
     m = re.search(r"(\d{1,3}\.){3}\d{1,3}", str(msg))
     if m:
         ip = m.group(0)
@@ -213,16 +255,19 @@ def _extract_ip(msg):
 
 
 def _extract_event_type(eid):
+    """Convert Windows Event ID number to a human-readable label."""
     mapping = {
-        4624:"Successful Login", 4625:"Failed Login",
-        4634:"Logout",           4647:"Logout",
-        4672:"Privilege Escalation", 4673:"Privilege Escalation",
-        4688:"Process Created",  4720:"User Account Created",
-        4740:"Account Locked Out", 4663:"File Access",
-        4698:"Scheduled Task Created", 7045:"New Service Installed",
+        4624: "Successful Login",    4625: "Failed Login",
+        4634: "Logout",              4647: "Logout",
+        4672: "Privilege Escalation",4673: "Privilege Escalation",
+        4688: "Process Created",     4720: "User Account Created",
+        4740: "Account Locked Out",  4663: "File Access",
+        4698: "Scheduled Task Created", 7045: "New Service Installed",
     }
-    try: return mapping.get(int(eid), "Other")
-    except: return "Other"
+    try:
+        return mapping.get(int(eid), "Other")
+    except Exception:
+        return "Other"
 
 
 # ══════════════════════════════════════════════════════════════════════
@@ -230,9 +275,13 @@ def _extract_event_type(eid):
 # ══════════════════════════════════════════════════════════════════════
 
 def detect_anomalies():
+    """
+    Run Isolation Forest ML model to detect unusual behaviour.
+    Each log gets a risk score (0-100) and a severity label.
+    The trained model is saved so it does not retrain every run.
+    """
     print("[3/5] Running AI anomaly detection...")
     import pandas as pd
-    import numpy as np
     from sklearn.ensemble import IsolationForest
     from sklearn.preprocessing import StandardScaler
     import joblib
@@ -240,12 +289,11 @@ def detect_anomalies():
     df = pd.read_csv(DATA_DIR / "structured_logs.csv")
     df["timestamp"] = pd.to_datetime(df["timestamp"], errors="coerce")
 
-    feature_cols = ["hour","day_of_week","is_night","is_weekend"]
-    df_feat = df[feature_cols].fillna(0)
+    # Scale the feature columns for the ML model
+    feature_cols = ["hour", "day_of_week", "is_night", "is_weekend"]
+    X_scaled     = StandardScaler().fit_transform(df[feature_cols].fillna(0))
 
-    scaler   = StandardScaler()
-    X_scaled = scaler.fit_transform(df_feat)
-
+    # Load saved model or train a new one
     model_path = MODELS_DIR / "iso_forest.pkl"
     if model_path.exists():
         model = joblib.load(model_path)
@@ -255,29 +303,32 @@ def detect_anomalies():
         model.fit(X_scaled)
         joblib.dump(model, model_path)
 
+    # Predict: -1 = anomaly, 1 = normal
     df["anomaly"] = model.predict(X_scaled)
-    raw = model.score_samples(X_scaled)
-    mn,mx = raw.min(), raw.max()
-    df["risk_score"] = ((raw-mx)/(mn-mx+1e-9)*100).round(2)
 
-    LOW_RISK  = {"Successful Login","Logout","File Access"}
-    HIGH_RISK = {"Privilege Escalation","Process Created","Scheduled Task Created",
-                 "New Service Installed","User Account Created","Account Locked Out"}
+    # Convert raw scores to 0-100 risk score
+    raw              = model.score_samples(X_scaled)
+    mn, mx           = raw.min(), raw.max()
+    df["risk_score"] = ((raw - mx) / (mn - mx + 1e-9) * 100).round(2)
 
-    def severity(row):
-        if row["anomaly"] != -1: return "Normal"
-        s, et = row["risk_score"], row.get("event_type_clean","Other")
+    # Assign severity based on score and event type
+    LOW_RISK  = {"Successful Login", "Logout", "File Access"}
+    HIGH_RISK = {"Privilege Escalation", "Process Created", "Scheduled Task Created",
+                 "New Service Installed", "User Account Created", "Account Locked Out"}
+
+    def get_severity(row):
+        if row["anomaly"] != -1:
+            return "Normal"
+        s, et = row["risk_score"], row.get("event_type_clean", "Other")
         if et in LOW_RISK:
-            return "High" if s>=90 else "Medium" if s>=70 else "Low"
+            return "High" if s >= 90 else "Medium" if s >= 70 else "Low"
         if et in HIGH_RISK:
-            return "Critical" if s>=70 else "High" if s>=45 else "Medium"
-        return "Critical" if s>=85 else "High" if s>=60 else "Medium" if s>=35 else "Low"
+            return "Critical" if s >= 70 else "High" if s >= 45 else "Medium"
+        return "Critical" if s >= 85 else "High" if s >= 60 else "Medium" if s >= 35 else "Low"
 
-    df["severity"] = df.apply(severity, axis=1)
+    df["severity"] = df.apply(get_severity, axis=1)
     df.to_csv(DATA_DIR / "anomalies.csv", index=False)
-
-    anom_count = (df["anomaly"] == -1).sum()
-    print(f"      Detected {anom_count} anomalies ✓")
+    print(f"      Detected {(df['anomaly'] == -1).sum()} anomalies ✓")
     return df
 
 
@@ -286,6 +337,11 @@ def detect_anomalies():
 # ══════════════════════════════════════════════════════════════════════
 
 def generate_alerts():
+    """
+    Apply 4 security rules and combine with ML anomalies.
+    Deduplicates alerts using MD5 hashing.
+    Tags each alert with a MITRE ATT&CK tactic code.
+    """
     print("[4/5] Generating security alerts...")
     import pandas as pd
 
@@ -294,83 +350,87 @@ def generate_alerts():
     df["timestamp"] = pd.to_datetime(df["timestamp"], errors="coerce")
 
     alerts = []
-    seen   = set()
+    seen   = set()  # for deduplication
 
-    SEV_SCORE = {"Critical":4,"High":3,"Medium":2,"Low":1}
-    MITRE = {
-        "Failed Login Burst":       "T1110 – Brute Force",
-        "Brute Force Success":      "T1110 – Brute Force",
-        "Privilege Escalation":     "T1068 – Privilege Escalation",
-        "Odd Hour Login":           "T1078 – Valid Accounts",
-        "ML Anomaly Detected":      "T1499 – Endpoint DoS",
-        "Suspicious Keyword":       "T1059 – Command & Scripting",
-        "Account Locked Out":       "T1110 – Brute Force",
+    SEV_SCORE = {"Critical": 4, "High": 3, "Medium": 2, "Low": 1}
+    MITRE     = {
+        "Failed Login Burst":   "T1110 – Brute Force",
+        "Brute Force Success":  "T1110 – Brute Force",
+        "Privilege Escalation": "T1068 – Privilege Escalation",
+        "Odd Hour Login":       "T1078 – Valid Accounts",
+        "ML Anomaly Detected":  "T1499 – Endpoint DoS",
     }
 
     def add_alert(atype, msg, sev, user="N/A", ip=None, ts=None, src="rule", risk=None):
+        """Add alert if not a duplicate (checked by MD5 hash)."""
         h = hashlib.md5(f"{atype}{msg}{user}".encode()).hexdigest()[:12]
-        if h in seen: return
+        if h in seen:
+            return
         seen.add(h)
         alerts.append({
-            "id": h, "timestamp": str(ts or datetime.now()),
-            "type": atype, "message": msg, "severity": sev,
-            "severity_score": SEV_SCORE.get(sev,0),
-            "username": user, "ip_address": ip or "N/A",
-            "risk_score": risk, "source": src,
-            "mitre_tactic": MITRE.get(atype,"Unknown"),
+            "id":             h,
+            "timestamp":      str(ts or datetime.now()),
+            "type":           atype,
+            "message":        msg,
+            "severity":       sev,
+            "severity_score": SEV_SCORE.get(sev, 0),
+            "username":       user,
+            "ip_address":     ip or "N/A",
+            "risk_score":     risk,
+            "source":         src,
+            "mitre_tactic":   MITRE.get(atype, "Unknown"),
         })
 
-    # Rule 1 — Failed login burst
-    if "event_type_clean" in df.columns:
-        failed = df[df["event_type_clean"]=="Failed Login"]
-        for user, count in failed.groupby("username").size().items():
-            if count >= 8:
-                add_alert("Failed Login Burst",
-                    f"{count} failed logins for '{user}'", "High", user, count=count)
+    # Rule 1 — Failed login burst (8+ failures for same user)
+    failed = df[df["event_type_clean"] == "Failed Login"]
+    for user, count in failed.groupby("username").size().items():
+        if count >= 8:
+            add_alert("Failed Login Burst", f"{count} failed logins for '{user}'", "High", user)
 
-    # Rule 2 — Brute force success
+    # Rule 2 — Brute force success (failures followed by successful login)
     for user in df["username"].unique():
-        u = df[df["username"]==user]
-        f = u[u["event_type_clean"]=="Failed Login"]
-        s = u[u["event_type_clean"]=="Successful Login"]
-        if len(f)>=3 and len(s)>=1:
+        u = df[df["username"] == user]
+        f = u[u["event_type_clean"] == "Failed Login"]
+        s = u[u["event_type_clean"] == "Successful Login"]
+        if len(f) >= 3 and len(s) >= 1:
             if pd.notna(f["timestamp"].max()) and pd.notna(s["timestamp"].min()):
                 if s["timestamp"].min() > f["timestamp"].max():
                     add_alert("Brute Force Success",
-                        f"'{user}' had {len(f)} failures then logged in.",
-                        "Critical", user)
+                              f"'{user}' had {len(f)} failures then logged in.", "Critical", user)
 
-    # Rule 3 — Privilege escalation
-    failed_users = set(df[df["event_type_clean"]=="Failed Login"]["username"])
-    for _,row in df[df["event_type_clean"]=="Privilege Escalation"].iterrows():
-        ip = str(row.get("ip_address",""))
+    # Rule 3 — Privilege escalation after failed logins or from external IP
+    failed_users = set(df[df["event_type_clean"] == "Failed Login"]["username"])
+    for _, row in df[df["event_type_clean"] == "Privilege Escalation"].iterrows():
+        ip = str(row.get("ip_address", ""))
         if row["username"] in failed_users or ip.startswith("203."):
             add_alert("Privilege Escalation",
-                f"Privilege escalation for '{row['username']}'.",
-                "Critical", row["username"], ip, row["timestamp"])
+                      f"Privilege escalation for '{row['username']}'.",
+                      "Critical", row["username"], ip, row["timestamp"])
 
-    # Rule 4 — Odd hour logins
-    for _,row in df[df["event_type_clean"]=="Successful Login"].iterrows():
+    # Rule 4 — Login between midnight and 5 AM
+    for _, row in df[df["event_type_clean"] == "Successful Login"].iterrows():
         try:
             if 0 <= pd.to_datetime(row["timestamp"]).hour <= 5:
                 add_alert("Odd Hour Login",
-                    f"Login 12AM–5AM by '{row['username']}'.",
-                    "Medium", row["username"], row.get("ip_address"), row["timestamp"])
-        except: pass
+                          f"Login 12AM–5AM by '{row['username']}'.",
+                          "Medium", row["username"], row.get("ip_address"), row["timestamp"])
+        except Exception:
+            pass
 
-    # ML anomalies
-    for _,row in anom_df[anom_df["anomaly"]==-1].iterrows():
-        sev = row.get("severity","Medium")
+    # ML anomalies → alerts
+    for _, row in anom_df[anom_df["anomaly"] == -1].iterrows():
+        sev = row.get("severity", "Medium")
         add_alert("ML Anomaly Detected",
-            str(row.get("message","Suspicious log"))[:150],
-            sev if sev!="Normal" else "Medium",
-            str(row.get("username","Unknown")),
-            row.get("ip_address"), row.get("timestamp"),
-            src="ml", risk=row.get("risk_score"))
+                  str(row.get("message", "Suspicious log"))[:150],
+                  sev if sev != "Normal" else "Medium",
+                  str(row.get("username", "Unknown")),
+                  row.get("ip_address"), row.get("timestamp"),
+                  src="ml", risk=row.get("risk_score"))
 
+    # Sort Critical alerts first
     alerts.sort(key=lambda x: x["severity_score"], reverse=True)
 
-    with open(DATA_DIR / "final_alerts.json","w") as f:
+    with open(DATA_DIR / "final_alerts.json", "w") as f:
         json.dump(alerts, f, indent=2, default=str)
 
     print(f"      Generated {len(alerts)} alerts ✓")
@@ -378,21 +438,24 @@ def generate_alerts():
 
 
 # ══════════════════════════════════════════════════════════════════════
-# STEP 5 — Upload to dashboard
+# STEP 5 — Upload to Dashboard
 # ══════════════════════════════════════════════════════════════════════
 
 def upload_to_dashboard(logs_df, anom_df, alerts):
+    """
+    Upload all data to the cloud server so the dashboard can display it.
+    Converts all values to JSON-safe types before sending.
+    """
     print("[5/5] Uploading data to your dashboard...")
-
     import pandas as pd
-    import math
 
     def clean_value(v):
+        """Convert non-JSON types (Timestamps, numpy types, NaN) to safe values."""
         if v is None:
             return None
-        if hasattr(v, 'isoformat'):
+        if hasattr(v, "isoformat"):   # pandas Timestamp → string
             return str(v)
-        if hasattr(v, 'item'):
+        if hasattr(v, "item"):        # numpy int/float → Python native
             return v.item()
         try:
             if isinstance(v, float) and math.isnan(v):
@@ -402,39 +465,40 @@ def upload_to_dashboard(logs_df, anom_df, alerts):
         return v
 
     def df_to_list(df, cols):
+        """Convert a dataframe to a list of clean dictionaries."""
         df = df.copy()
         for c in cols:
             if c not in df.columns:
                 df[c] = None
+        # Convert datetime columns to strings
         for c in df.columns:
-            if 'datetime' in str(df[c].dtype):
-                df[c] = df[c].astype(str).replace('NaT', None)
-        rows = df[cols].to_dict("records")
-        return [{k: clean_value(v) for k, v in row.items()} for row in rows]
+            if "datetime" in str(df[c].dtype):
+                df[c] = df[c].astype(str).replace("NaT", None)
+        return [{k: clean_value(v) for k, v in row.items()}
+                for row in df[cols].to_dict("records")]
 
-    def clean_alerts(alerts_list):
-        return [{k: clean_value(v) for k, v in alert.items()} for alert in alerts_list]
-
-    log_cols  = ["timestamp","source","event_id","event_type","computer",
-                 "message","username","ip_address","event_type_clean",
-                 "hour","is_night","is_weekend"]
-    anom_cols = ["timestamp","username","ip_address","event_type_clean",
-                 "anomaly","risk_score","severity","message"]
+    log_cols  = ["timestamp", "source", "event_id", "event_type", "computer",
+                 "message", "username", "ip_address", "event_type_clean",
+                 "hour", "is_night", "is_weekend"]
+    anom_cols = ["timestamp", "username", "ip_address", "event_type_clean",
+                 "anomaly", "risk_score", "severity", "message"]
 
     payload = {
         "user_id":   USER_ID,
         "machine":   MACHINE,
         "logs":      df_to_list(logs_df, log_cols),
         "anomalies": df_to_list(anom_df, anom_cols),
-        "alerts":    clean_alerts(alerts),
+        "alerts":    [{k: clean_value(v) for k, v in a.items()} for a in alerts],
     }
 
+    # Verify everything is JSON serializable before sending
     try:
         json.dumps(payload)
     except Exception as e:
         print(f"      Data formatting error: {e}")
         return
 
+    # Send to server
     try:
         r = requests.post(
             f"{SERVER_URL}/upload",
@@ -443,25 +507,30 @@ def upload_to_dashboard(logs_df, anom_df, alerts):
             headers={"Content-Type": "application/json"}
         )
         if r.status_code == 200:
-            print(f"      Upload successful ✓")
-            print(f"\n{'='*55}")
-            print(f"  ✅ Your dashboard is ready!")
+            print("      Upload successful ✓")
+            print(f"\n{'=' * 55}")
+            print("  ✅ Your dashboard is ready!")
             print(f"  🌐 {DASHBOARD_URL}")
-            print(f"{'='*55}\n")
+            print(f"{'=' * 55}\n")
             webbrowser.open(DASHBOARD_URL)
         else:
             print(f"      Upload failed: {r.status_code} — {r.text[:200]}")
     except Exception as e:
         print(f"      Could not reach server: {e}")
+        print(f"      Your data is saved locally at: {DATA_DIR}")
 
+
+# ══════════════════════════════════════════════════════════════════════
+# MAIN
+# ══════════════════════════════════════════════════════════════════════
 
 if __name__ == "__main__":
     banner()
     try:
-        logs_df  = collect_logs()
-        logs_df  = preprocess()
-        anom_df  = detect_anomalies()
-        alerts   = generate_alerts()
+        logs_df = collect_logs()
+        logs_df = preprocess()
+        anom_df = detect_anomalies()
+        alerts  = generate_alerts()
         upload_to_dashboard(logs_df, anom_df, alerts)
     except KeyboardInterrupt:
         print("\n[Stopped by user]")
