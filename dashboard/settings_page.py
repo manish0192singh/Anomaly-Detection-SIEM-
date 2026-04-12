@@ -36,13 +36,13 @@ def settings_page():
         1, 30, settings.get("retention_days", 7)
     )
 
-    settings["log_limit"] = st.number_input(
+    """settings["log_limit"] = st.number_input(
         "Maximum Logs to Collect",
         min_value=500,
         max_value=20000,
         value=settings.get("log_limit", 2000),
         step=500
-    )
+    )"""
 
     st.info("""
     These settings control how many logs your system collects and how long old logs are kept.

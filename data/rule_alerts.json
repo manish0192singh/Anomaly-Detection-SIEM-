@@ -1,137 +1,529 @@
 [
     {
-        "type": "Odd Hour Login",
-        "severity": "Medium",
-        "username": "LENOVOIDEAPAD$",
-        "description": "Login between 12 AM\u20135 AM by 'LENOVOIDEAPAD$'.",
-        "timestamp": "2026-04-06 02:30:15",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Odd Hour Login",
-        "severity": "Medium",
-        "username": "LENOVOIDEAPAD$",
-        "description": "Login between 12 AM\u20135 AM by 'LENOVOIDEAPAD$'.",
-        "timestamp": "2026-04-06 02:30:14",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Odd Hour Login",
-        "severity": "Medium",
-        "username": "LENOVOIDEAPAD$",
-        "description": "Login between 12 AM\u20135 AM by 'LENOVOIDEAPAD$'.",
-        "timestamp": "2026-04-06 02:30:13",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Odd Hour Login",
-        "severity": "Medium",
-        "username": "LENOVOIDEAPAD$",
-        "description": "Login between 12 AM\u20135 AM by 'LENOVOIDEAPAD$'.",
-        "timestamp": "2026-04-06 02:30:12",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Odd Hour Login",
-        "severity": "Medium",
-        "username": "LENOVOIDEAPAD$",
-        "description": "Login between 12 AM\u20135 AM by 'LENOVOIDEAPAD$'.",
-        "timestamp": "2026-04-06 02:30:12",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Odd Hour Login",
-        "severity": "Medium",
-        "username": "LENOVOIDEAPAD$",
-        "description": "Login between 12 AM\u20135 AM by 'LENOVOIDEAPAD$'.",
-        "timestamp": "2026-04-06 02:30:12",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Odd Hour Login",
-        "severity": "Medium",
-        "username": "LENOVOIDEAPAD$",
-        "description": "Login between 12 AM\u20135 AM by 'LENOVOIDEAPAD$'.",
-        "timestamp": "2026-04-06 02:30:12",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Odd Hour Login",
-        "severity": "Medium",
-        "username": "LENOVOIDEAPAD$",
-        "description": "Login between 12 AM\u20135 AM by 'LENOVOIDEAPAD$'.",
-        "timestamp": "2026-04-06 02:30:12",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Odd Hour Login",
-        "severity": "Medium",
-        "username": "LENOVOIDEAPAD$",
-        "description": "Login between 12 AM\u20135 AM by 'LENOVOIDEAPAD$'.",
-        "timestamp": "2026-04-06 02:24:43",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Odd Hour Login",
-        "severity": "Medium",
-        "username": "LENOVOIDEAPAD$",
-        "description": "Login between 12 AM\u20135 AM by 'LENOVOIDEAPAD$'.",
-        "timestamp": "2026-04-06 02:24:42",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Odd Hour Login",
-        "severity": "Medium",
-        "username": "LENOVOIDEAPAD$",
-        "description": "Login between 12 AM\u20135 AM by 'LENOVOIDEAPAD$'.",
-        "timestamp": "2026-04-06 02:24:32",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Odd Hour Login",
-        "severity": "Medium",
-        "username": "LENOVOIDEAPAD$",
-        "description": "Login between 12 AM\u20135 AM by 'LENOVOIDEAPAD$'.",
-        "timestamp": "2026-04-06 02:24:31",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Odd Hour Login",
-        "severity": "Medium",
-        "username": "LENOVOIDEAPAD$",
-        "description": "Login between 12 AM\u20135 AM by 'LENOVOIDEAPAD$'.",
-        "timestamp": "2026-04-06 02:12:07",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Odd Hour Login",
-        "severity": "Medium",
-        "username": "LENOVOIDEAPAD$",
-        "description": "Login between 12 AM\u20135 AM by 'LENOVOIDEAPAD$'.",
-        "timestamp": "2026-04-06 02:12:05",
-        "ip_address": "nan"
+        "type": "Failed Login Burst",
+        "severity": "High",
+        "username": "Unknown",
+        "description": "8 failed login attempts for 'Unknown'.",
+        "timestamp": "2026-04-12 23:58:44.677239",
+        "count": 8
     },
     {
         "type": "Multiple IP Addresses",
         "severity": "High",
         "username": "Unknown",
-        "description": "'Unknown' accessed from 46 different IPs.",
-        "timestamp": "2026-04-06 12:45:16.997954",
-        "count": 46
+        "description": "'Unknown' accessed the system from 39 different IP addresses.",
+        "timestamp": "2026-04-12 23:58:44.714165",
+        "count": 39
     },
     {
         "type": "Rapid Successive Logins",
         "severity": "Medium",
         "username": "LENOVOIDEAPAD$",
-        "description": "'LENOVOIDEAPAD$' had 21 logins within 60-second windows.",
-        "timestamp": "2026-04-06 12:45:17.004953",
-        "count": 21
+        "description": "'LENOVOIDEAPAD$' logged in 33 times within 60-second windows.",
+        "timestamp": "2026-04-12 23:58:44.725445",
+        "count": 33
     },
     {
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-06T07:07:07.5000000Z\r\nAdditional Information: 2026-04-05T21:00:21.7580210Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-12T18:08:11.5000000Z\r\nAdditional Information: 2026-04-12T17:45:51.6984628Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-12 23:38:11",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-12T16:57:58.5000000Z\r\nAdditional Information: 2026-04-12T15:20:39.3354992Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-12 22:27:58",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-12T14:04:36.3292703Z\r\nAdditional Information: 2026-04-12T14:04:36.3285663Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-12 19:34:36",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-12T14:04:36.3274697Z\r\nAdditional Information: 2026-04-12T14:04:36.3261344Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-12 19:34:36",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-12T14:04:36.3253454Z\r\nAdditional Information: 2026-04-12T14:04:40.4194523Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-12 19:34:36",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-12T13:26:22.5000000Z\r\nAdditional Information: 2026-04-12T11:44:33.7061498Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-12 18:56:22",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-12T11:17:02.5000000Z\r\nAdditional Information: 2026-04-12T10:57:49.7018840Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-12 16:47:02",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-12T09:57:14.5000000Z\r\nAdditional Information: 2026-04-12T09:55:32.6790001Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-12 15:27:14",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-12T06:35:46.5000000Z\r\nAdditional Information: 2026-04-12T04:58:36.2853293Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-12 12:05:46",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-12T04:25:47.5000000Z\r\nAdditional Information: 2026-04-11T17:51:51.2398013Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-12 09:55:47",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-11T17:49:06.5000000Z\r\nAdditional Information: 2026-04-11T16:57:58.1546397Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-11 23:19:06",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-11T16:47:27.5000000Z\r\nAdditional Information: 2026-04-11T16:30:45.4134209Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-11 22:17:27",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-11T15:53:22.5000000Z\r\nAdditional Information: 2026-04-11T10:47:45.0100743Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-11 21:23:22",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-11T10:28:24.5000000Z\r\nAdditional Information: 2026-04-10T20:00:56.3265058Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-11 15:58:24",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-10T19:31:17.5000000Z\r\nAdditional Information: 2026-04-10T17:34:27.5516574Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-11 01:01:17",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-10T17:25:49.5000000Z\r\nAdditional Information: 2026-04-10T16:04:54.2268354Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-10 22:55:49",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-10T12:22:37.5000000Z\r\nAdditional Information: 2026-04-10T10:14:11.9630612Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-10 17:52:37",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-10T10:06:33.5000000Z\r\nAdditional Information: 2026-04-10T09:35:50.1091475Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-10 15:36:33",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-10T09:22:43.9939582Z\r\nAdditional Information: 2026-04-10T09:22:43.9930237Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-10 14:52:43",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-10T09:22:43.9775634Z\r\nAdditional Information: 2026-04-10T09:22:43.9771816Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-10 14:52:43",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-10T09:22:43.9754258Z\r\nAdditional Information: 2026-04-10T09:22:45.8777832Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-10 14:52:43",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-10T09:21:48.5000000Z\r\nAdditional Information: 2026-04-09T18:46:10.3775919Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-10 14:51:48",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-09T17:52:37.5000000Z\r\nAdditional Information: 2026-04-09T17:45:38.4955787Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-09 23:22:37",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-09T16:57:27.5000000Z\r\nAdditional Information: 2026-04-09T15:34:14.5025688Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-09 22:27:27",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-09T14:57:59.5000000Z\r\nAdditional Information: 2026-04-09T14:44:08.1764460Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-09 20:27:59",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-09T14:37:28.5000000Z\r\nAdditional Information: 2026-04-09T14:20:55.8157717Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-09 20:07:28",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-09T13:14:02.5000000Z\r\nAdditional Information: 2026-04-09T12:58:29.2775949Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-09 18:44:02",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-09T12:58:11.5000000Z\r\nAdditional Information: 2026-04-09T09:58:14.3294196Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-09 18:28:11",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-09T09:55:18.5000000Z\r\nAdditional Information: 2026-04-09T09:48:33.9442979Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-09 15:25:18",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-09T09:33:19.5000000Z\r\nAdditional Information: 2026-04-09T07:42:48.1646884Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-09 15:03:19",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-09T07:06:53.2546106Z\r\nAdditional Information: 2026-04-09T07:06:53.2538000Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-09 12:36:53",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-09T07:06:53.2527277Z\r\nAdditional Information: 2026-04-09T07:06:53.2518151Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-09 12:36:53",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-09T07:06:53.2468781Z\r\nAdditional Information: 2026-04-09T07:06:56.9642389Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-09 12:36:53",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-09T07:05:59.5000000Z\r\nAdditional Information: 2026-04-08T15:37:00.7302718Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-09 12:35:59",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-08T15:34:04.5000000Z\r\nAdditional Information: 2026-04-08T14:50:42.4154586Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-08 21:04:04",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-08T14:09:45.5000000Z\r\nAdditional Information: 2026-04-08T14:09:27.6825235Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-08 19:39:45",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-08T14:04:38.5000000Z\r\nAdditional Information: 2026-04-08T13:59:07.6050374Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-08 19:34:38",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-08T13:58:49.5000000Z\r\nAdditional Information: 2026-04-08T10:58:52.8105923Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-08 19:28:49",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-08T10:10:31.5000000Z\r\nAdditional Information: 2026-04-08T09:26:48.1138052Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-08 15:40:31",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-08T09:17:03.5000000Z\r\nAdditional Information: 2026-04-08T09:14:25.0970425Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-08 14:47:03",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-08T08:05:14.5000000Z\r\nAdditional Information: 2026-04-08T07:34:27.8616196Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-08 13:35:14",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-08T07:22:43.5000000Z\r\nAdditional Information: 2026-04-08T07:20:36.4393323Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-08 12:52:43",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-08T07:08:43.5000000Z\r\nAdditional Information: 2026-04-07T19:29:06.8184579Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-08 12:38:43",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-07T19:28:48.5000000Z\r\nAdditional Information: 2026-04-07T16:28:52.2727982Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-08 00:58:48",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-07T14:52:43.5000000Z\r\nAdditional Information: 2026-04-07T14:35:42.3555176Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-07 20:22:43",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-07T13:46:27.5000000Z\r\nAdditional Information: 2026-04-07T12:22:22.9666055Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-07 19:16:27",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-07T12:21:04.5000000Z\r\nAdditional Information: 2026-04-07T12:16:34.7114070Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-07 17:51:04",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-07T10:28:47.5000000Z\r\nAdditional Information: 2026-04-07T08:29:40.3972318Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-07 15:58:47",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-07T07:55:15.5000000Z\r\nAdditional Information: 2026-04-07T07:52:25.4059136Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-07 13:25:15",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-07T07:24:39.5000000Z\r\nAdditional Information: 2026-04-07T07:12:43.2685624Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-07 12:54:39",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-07T06:17:52.5000000Z\r\nAdditional Information: 2026-04-07T06:17:33.1086661Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-07 11:47:52",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-07T06:07:27.5000000Z\r\nAdditional Information: 2026-04-07T05:30:14.4060655Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-07 11:37:27",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-07T03:38:07.8220995Z\r\nAdditional Information: 2026-04-07T03:38:07.8207899Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-07 09:08:07",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-07T03:38:07.8207899Z\r\nAdditional Information: 2026-04-07T03:38:07.8207583Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-07 09:08:07",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-07T03:38:07.8197586Z\r\nAdditional Information: 2026-04-07T03:38:09.2663440Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-07 09:08:07",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-07T03:37:34.5000000Z\r\nAdditional Information: 2026-04-06T18:45:20.2137322Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-07 09:07:34",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-06T18:44:57.5000000Z\r\nAdditional Information: 2026-04-06T17:57:40.0306340Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-07 00:14:57",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-06T17:46:35.5000000Z\r\nAdditional Information: 2026-04-06T17:18:38.4812268Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-06 23:16:35",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-06T16:05:41.5000000Z\r\nAdditional Information: 2026-04-06T16:05:02.2016821Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-06 21:35:41",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-06T14:42:04.5000000Z\r\nAdditional Information: 2026-04-06T13:06:55.3359478Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-06 20:12:04",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-06T10:42:56.5000000Z\r\nAdditional Information: 2026-04-06T10:19:50.6195612Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-06 16:12:56",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-06T09:00:20.5000000Z\r\nAdditional Information: 2026-04-06T07:20:08.0029497Z\r\n\r\nThis Ev",
+        "timestamp": "2026-04-06 14:30:20",
+        "ip_address": "nan"
+    },
+    {
+        "type": "Suspicious Keyword Detected",
+        "severity": "Critical",
+        "username": "Unknown",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-06T07:07:07.5000000Z\r\nAdditional Information: 2026-04-05T21:00:21.7580210Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-06 12:37:07",
         "ip_address": "nan"
     },
@@ -139,7 +531,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-05T20:40:06.2523021Z\r\nAdditional Information: 2026-04-05T20:40:06.2517343Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-05T20:40:06.2523021Z\r\nAdditional Information: 2026-04-05T20:40:06.2517343Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-06 02:10:06",
         "ip_address": "nan"
     },
@@ -147,7 +539,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-05T20:40:06.2502567Z\r\nAdditional Information: 2026-04-05T20:40:06.2487122Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-05T20:40:06.2502567Z\r\nAdditional Information: 2026-04-05T20:40:06.2487122Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-06 02:10:06",
         "ip_address": "nan"
     },
@@ -155,7 +547,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-05T20:40:06.2464935Z\r\nAdditional Information: 2026-04-05T20:40:09.7040700Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-05T20:40:06.2464935Z\r\nAdditional Information: 2026-04-05T20:40:09.7040700Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-06 02:10:06",
         "ip_address": "nan"
     },
@@ -163,7 +555,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-05T20:39:12.5000000Z\r\nAdditional Information: 2026-04-05T18:44:25.0368590Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-05T20:39:12.5000000Z\r\nAdditional Information: 2026-04-05T18:44:25.0368590Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-06 02:09:12",
         "ip_address": "nan"
     },
@@ -171,7 +563,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-05T15:49:36.5000000Z\r\nAdditional Information: 2026-04-05T15:45:28.2221951Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-05T15:49:36.5000000Z\r\nAdditional Information: 2026-04-05T15:45:28.2221951Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-05 21:19:36",
         "ip_address": "nan"
     },
@@ -179,7 +571,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-05T14:29:26.5000000Z\r\nAdditional Information: 2026-04-05T14:14:37.3276744Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-05T14:29:26.5000000Z\r\nAdditional Information: 2026-04-05T14:14:37.3276744Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-05 19:59:26",
         "ip_address": "nan"
     },
@@ -187,7 +579,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-05T14:14:18.5000000Z\r\nAdditional Information: 2026-04-05T11:14:22.0224347Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-05T14:14:18.5000000Z\r\nAdditional Information: 2026-04-05T11:14:22.0224347Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-05 19:44:18",
         "ip_address": "nan"
     },
@@ -195,7 +587,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-05T09:47:31.5000000Z\r\nAdditional Information: 2026-04-05T09:46:45.0694589Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-05T09:47:31.5000000Z\r\nAdditional Information: 2026-04-05T09:46:45.0694589Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-05 15:17:31",
         "ip_address": "nan"
     },
@@ -203,7 +595,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-05T09:02:45.5000000Z\r\nAdditional Information: 2026-04-04T20:48:55.6371452Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-05T09:02:45.5000000Z\r\nAdditional Information: 2026-04-04T20:48:55.6371452Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-05 14:32:45",
         "ip_address": "nan"
     },
@@ -211,7 +603,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-04T20:37:10.5000000Z\r\nAdditional Information: 2026-04-04T19:25:12.5534743Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-04T20:37:10.5000000Z\r\nAdditional Information: 2026-04-04T19:25:12.5534743Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-05 02:07:10",
         "ip_address": "nan"
     },
@@ -219,7 +611,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-04T19:24:54.5000000Z\r\nAdditional Information: 2026-04-04T16:24:58.4652913Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-04T19:24:54.5000000Z\r\nAdditional Information: 2026-04-04T16:24:58.4652913Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-05 00:54:54",
         "ip_address": "nan"
     },
@@ -227,7 +619,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-04T15:54:45.5000000Z\r\nAdditional Information: 2026-04-04T15:34:42.0655128Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-04T15:54:45.5000000Z\r\nAdditional Information: 2026-04-04T15:34:42.0655128Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-04 21:24:45",
         "ip_address": "nan"
     },
@@ -235,7 +627,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-04T13:26:02.5000000Z\r\nAdditional Information: 2026-04-04T11:01:16.8064883Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-04T13:26:02.5000000Z\r\nAdditional Information: 2026-04-04T11:01:16.8064883Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-04 18:56:02",
         "ip_address": "nan"
     },
@@ -243,7 +635,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-04T10:45:41.5000000Z\r\nAdditional Information: 2026-04-04T09:59:49.2711491Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-04T10:45:41.5000000Z\r\nAdditional Information: 2026-04-04T09:59:49.2711491Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-04 16:15:41",
         "ip_address": "nan"
     },
@@ -251,7 +643,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-04T09:58:36.5000000Z\r\nAdditional Information: 2026-04-04T08:49:11.4467106Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-04T09:58:36.5000000Z\r\nAdditional Information: 2026-04-04T08:49:11.4467106Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-04 15:28:36",
         "ip_address": "nan"
     },
@@ -259,7 +651,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-04T08:38:04.5000000Z\r\nAdditional Information: 2026-04-04T07:51:11.5964573Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-04T08:38:04.5000000Z\r\nAdditional Information: 2026-04-04T07:51:11.5964573Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-04 14:08:04",
         "ip_address": "nan"
     },
@@ -267,7 +659,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-04T07:20:11.5000000Z\r\nAdditional Information: 2026-04-04T07:18:30.5293347Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-04T07:20:11.5000000Z\r\nAdditional Information: 2026-04-04T07:18:30.5293347Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-04 12:50:11",
         "ip_address": "nan"
     },
@@ -275,7 +667,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-04T06:00:35.5000000Z\r\nAdditional Information: 2026-04-04T04:45:47.8721471Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-04T06:00:35.5000000Z\r\nAdditional Information: 2026-04-04T04:45:47.8721471Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-04 11:30:35",
         "ip_address": "nan"
     },
@@ -283,7 +675,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-04T04:45:42.5000000Z\r\nAdditional Information: 2026-04-04T04:28:02.4493052Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-04T04:45:42.5000000Z\r\nAdditional Information: 2026-04-04T04:28:02.4493052Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-04 10:15:42",
         "ip_address": "nan"
     },
@@ -291,7 +683,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-04T03:46:04.5000000Z\r\nAdditional Information: 2026-04-04T03:26:37.8177731Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-04T03:46:04.5000000Z\r\nAdditional Information: 2026-04-04T03:26:37.8177731Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-04 09:16:04",
         "ip_address": "nan"
     },
@@ -299,7 +691,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-04T03:26:32.5000000Z\r\nAdditional Information: 2026-04-04T02:52:36.1831616Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-04T03:26:32.5000000Z\r\nAdditional Information: 2026-04-04T02:52:36.1831616Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-04 08:56:32",
         "ip_address": "nan"
     },
@@ -307,7 +699,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-04T02:26:56.5000000Z\r\nAdditional Information: 2026-04-03T18:07:47.7023282Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-04T02:26:56.5000000Z\r\nAdditional Information: 2026-04-03T18:07:47.7023282Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-04 07:56:56",
         "ip_address": "nan"
     },
@@ -315,7 +707,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-03T17:00:31.2201951Z\r\nAdditional Information: 2026-04-03T17:00:31.2195783Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-03T17:00:31.2201951Z\r\nAdditional Information: 2026-04-03T17:00:31.2195783Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-03 22:30:31",
         "ip_address": "nan"
     },
@@ -323,7 +715,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-03T17:00:31.2195783Z\r\nAdditional Information: 2026-04-03T17:00:31.2196274Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-03T17:00:31.2195783Z\r\nAdditional Information: 2026-04-03T17:00:31.2196274Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-03 22:30:31",
         "ip_address": "nan"
     },
@@ -331,7 +723,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-03T17:00:31.2180216Z\r\nAdditional Information: 2026-04-03T17:00:33.1540796Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-03T17:00:31.2180216Z\r\nAdditional Information: 2026-04-03T17:00:33.1540796Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-03 22:30:31",
         "ip_address": "nan"
     },
@@ -339,7 +731,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-03T16:49:14.5000000Z\r\nAdditional Information: 2026-04-03T16:20:07.4788743Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-03T16:49:14.5000000Z\r\nAdditional Information: 2026-04-03T16:20:07.4788743Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-03 22:19:14",
         "ip_address": "nan"
     },
@@ -347,7 +739,7 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-03T16:19:48.5000000Z\r\nAdditional Information: 2026-04-03T04:42:24.1650486Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-03T16:19:48.5000000Z\r\nAdditional Information: 2026-04-03T04:42:24.1650486Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-03 21:49:48",
         "ip_address": "nan"
     },
@@ -355,584 +747,16 @@
         "type": "Suspicious Keyword Detected",
         "severity": "Critical",
         "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-03T04:13:32.5000000Z\r\nAdditional Information: 2026-04-03T04:06:29.6338611Z\r\n\r\nThis Ev",
+        "description": "Suspicious keyword in log by 'Unknown': Possible detection of CVE: 2026-04-03T04:13:32.5000000Z\r\nAdditional Information: 2026-04-03T04:06:29.6338611Z\r\n\r\nThis Ev",
         "timestamp": "2026-04-03 09:43:32",
         "ip_address": "nan"
     },
     {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-03T03:54:33.5000000Z\r\nAdditional Information: 2026-04-02T18:32:36.0800771Z\r\n\r\nThis Ev",
-        "timestamp": "2026-04-03 09:24:33",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-02T17:04:47.5000000Z\r\nAdditional Information: 2026-04-02T15:29:24.4309050Z\r\n\r\nThis Ev",
-        "timestamp": "2026-04-02 22:34:47",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-02T14:43:16.3349011Z\r\nAdditional Information: 2026-04-02T14:43:16.3341430Z\r\n\r\nThis Ev",
-        "timestamp": "2026-04-02 20:13:16",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-02T14:17:38.3434309Z\r\nAdditional Information: 2026-04-02T14:17:38.3434495Z\r\n\r\nThis Ev",
-        "timestamp": "2026-04-02 19:47:38",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-02T14:17:38.3421303Z\r\nAdditional Information: 2026-04-02T14:17:38.3414635Z\r\n\r\nThis Ev",
-        "timestamp": "2026-04-02 19:47:38",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-02T14:17:38.3387194Z\r\nAdditional Information: 2026-04-02T14:17:39.9043254Z\r\n\r\nThis Ev",
-        "timestamp": "2026-04-02 19:47:38",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-02T14:16:42.5000000Z\r\nAdditional Information: 2026-04-01T19:55:05.9869211Z\r\n\r\nThis Ev",
-        "timestamp": "2026-04-02 19:46:42",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-01T19:33:15.5000000Z\r\nAdditional Information: 2026-04-01T15:02:19.3779171Z\r\n\r\nThis Ev",
-        "timestamp": "2026-04-02 01:03:15",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-01T14:21:46.5000000Z\r\nAdditional Information: 2026-04-01T12:56:32.1659741Z\r\n\r\nThis Ev",
-        "timestamp": "2026-04-01 19:51:46",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-01T12:09:42.5000000Z\r\nAdditional Information: 2026-04-01T11:21:49.6414568Z\r\n\r\nThis Ev",
-        "timestamp": "2026-04-01 17:39:42",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-01T09:54:28.8768303Z\r\nAdditional Information: 2026-04-01T09:54:28.8761768Z\r\n\r\nThis Ev",
-        "timestamp": "2026-04-01 15:24:28",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-01T09:54:28.8739369Z\r\nAdditional Information: 2026-04-01T09:54:28.8731599Z\r\n\r\nThis Ev",
-        "timestamp": "2026-04-01 15:24:28",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-01T09:54:28.8706633Z\r\nAdditional Information: 2026-04-01T09:54:33.5833457Z\r\n\r\nThis Ev",
-        "timestamp": "2026-04-01 15:24:28",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-04-01T09:53:54.5000000Z\r\nAdditional Information: 2026-03-31T19:45:12.5646185Z\r\n\r\nThis Ev",
-        "timestamp": "2026-04-01 15:23:54",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-31T19:44:54.5000000Z\r\nAdditional Information: 2026-03-31T16:44:59.0836435Z\r\n\r\nThis Ev",
-        "timestamp": "2026-04-01 01:14:54",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-31T15:17:30.5000000Z\r\nAdditional Information: 2026-03-31T14:05:40.9852206Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-31 20:47:30",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-31T12:58:37.5000000Z\r\nAdditional Information: 2026-03-31T09:59:56.9631865Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-31 18:28:37",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-31T09:45:28.5000000Z\r\nAdditional Information: 2026-03-31T09:42:41.8174041Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-31 15:15:28",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-31T09:17:59.5000000Z\r\nAdditional Information: 2026-03-31T09:17:42.3185105Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-31 14:47:59",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-31T09:02:24.5000000Z\r\nAdditional Information: 2026-03-31T08:07:08.7810052Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-31 14:32:24",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-31T07:14:57.5000000Z\r\nAdditional Information: 2026-03-30T17:28:30.7461810Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-31 12:44:57",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-30T16:47:08.5000000Z\r\nAdditional Information: 2026-03-30T16:34:10.7257775Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-30 22:17:08",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-30T15:45:59.5000000Z\r\nAdditional Information: 2026-03-30T15:43:48.4056505Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-30 21:15:59",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-30T15:36:11.5000000Z\r\nAdditional Information: 2026-03-30T14:24:47.8663928Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-30 21:06:11",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-30T13:57:39.5000000Z\r\nAdditional Information: 2026-03-30T13:48:36.4691755Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-30 19:27:39",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-30T13:15:02.5000000Z\r\nAdditional Information: 2026-03-30T12:14:51.2712989Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-30 18:45:02",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-30T11:23:15.5000000Z\r\nAdditional Information: 2026-03-30T09:45:37.0814291Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-30 16:53:15",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-30T08:38:43.0608926Z\r\nAdditional Information: 2026-03-30T08:38:43.0600714Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-30 14:08:43",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-30T08:38:43.0536759Z\r\nAdditional Information: 2026-03-30T08:38:43.0526694Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-30 14:08:43",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-30T08:38:43.0511609Z\r\nAdditional Information: 2026-03-30T08:38:44.6417166Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-30 14:08:43",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-30T08:37:47.5000000Z\r\nAdditional Information: 2026-03-29T18:15:31.1503446Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-30 14:07:47",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-29T16:14:57.5000000Z\r\nAdditional Information: 2026-03-29T14:32:52.7691563Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-29 21:44:57",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-29T13:26:56.5000000Z\r\nAdditional Information: 2026-03-29T13:05:58.2388236Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-29 18:56:56",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-29T10:41:48.4860582Z\r\nAdditional Information: 2026-03-29T10:41:48.4850865Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-29 16:11:48",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-29T10:41:48.4840336Z\r\nAdditional Information: 2026-03-29T10:41:48.4831161Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-29 16:11:48",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-29T10:41:48.4809391Z\r\nAdditional Information: 2026-03-29T10:41:51.7469325Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-29 16:11:48",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-29T10:40:54.5000000Z\r\nAdditional Information: 2026-03-28T18:12:54.9903207Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-29 16:10:54",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-28T17:34:33.5000000Z\r\nAdditional Information: 2026-03-28T17:33:09.7878105Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-28 23:04:33",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-28T16:43:59.5000000Z\r\nAdditional Information: 2026-03-28T16:11:23.4503860Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-28 22:13:59",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-28T14:45:08.5000000Z\r\nAdditional Information: 2026-03-27T20:08:02.0926635Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-28 20:15:08",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T19:33:00.8655467Z\r\nAdditional Information: 2026-03-27T19:33:00.8648784Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-28 01:03:00",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T19:32:15.5000000Z\r\nAdditional Information: 2026-03-27T17:36:16.6148458Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-28 01:02:15",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T16:47:16.2365971Z\r\nAdditional Information: 2026-03-27T16:47:16.2350099Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-27 22:17:16",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T16:47:16.2350099Z\r\nAdditional Information: 2026-03-27T16:47:16.2343255Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-27 22:17:16",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T16:47:16.2343255Z\r\nAdditional Information: 2026-03-27T16:47:18.9506044Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-27 22:17:16",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T16:46:21.5000000Z\r\nAdditional Information: 2026-03-27T15:42:24.9012212Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-27 22:16:21",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T14:10:44.5000000Z\r\nAdditional Information: 2026-03-27T12:54:33.6511614Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-27 19:40:44",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T11:52:22.5000000Z\r\nAdditional Information: 2026-03-27T11:41:03.1547174Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-27 17:22:22",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T11:24:58.5000000Z\r\nAdditional Information: 2026-03-27T10:19:20.4139285Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-27 16:54:58",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T10:18:50.5000000Z\r\nAdditional Information: 2026-03-27T09:07:14.5693025Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-27 15:48:50",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T09:03:49.5000000Z\r\nAdditional Information: 2026-03-27T09:02:52.3226133Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-27 14:33:49",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T07:55:22.5000000Z\r\nAdditional Information: 2026-03-27T07:54:50.5419075Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-27 13:25:22",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T06:50:08.5000000Z\r\nAdditional Information: 2026-03-27T03:48:46.8494887Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-27 12:20:08",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-27T03:38:32.5000000Z\r\nAdditional Information: 2026-03-26T18:52:51.5087220Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-27 09:08:32",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-26T18:38:15.5000000Z\r\nAdditional Information: 2026-03-26T18:37:40.1047110Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-27 00:08:15",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-26T17:11:41.5000000Z\r\nAdditional Information: 2026-03-26T16:45:18.0338342Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-26 22:41:41",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-26T15:59:13.5000000Z\r\nAdditional Information: 2026-03-26T15:54:27.1325308Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-26 21:29:13",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-26T14:17:03.5000000Z\r\nAdditional Information: 2026-03-26T13:08:28.5555210Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-26 19:47:03",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-26T10:21:50.5000000Z\r\nAdditional Information: 2026-03-26T08:58:56.0259285Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-26 15:51:50",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Installation Successful: Windows successfully installed the following update: Update for Microsoft Defender Antivirus an",
-        "timestamp": "2026-03-26 13:50:50",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Installation Started: Windows has started installing the following update: Update for Microsoft Defender Antivirus antim",
-        "timestamp": "2026-03-26 13:50:27",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-26T07:32:25.5000000Z\r\nAdditional Information: 2026-03-25T20:25:33.6691448Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-26 13:02:25",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-25T20:02:33.4295497Z\r\nAdditional Information: 2026-03-25T20:02:33.4292783Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-26 01:32:33",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-25T20:02:33.4148634Z\r\nAdditional Information: 2026-03-25T20:02:33.4141495Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-26 01:32:33",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-25T20:02:33.4141495Z\r\nAdditional Information: 2026-03-25T20:02:36.6622389Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-26 01:32:33",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-25T20:01:39.5000000Z\r\nAdditional Information: 2026-03-25T18:15:56.0224456Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-26 01:31:39",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-25T15:14:31.5000000Z\r\nAdditional Information: 2026-03-25T15:13:07.1047298Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-25 20:44:31",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-25T11:33:27.5000000Z\r\nAdditional Information: 2026-03-25T09:33:46.5448606Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-25 17:03:27",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-25T09:33:27.5000000Z\r\nAdditional Information: 2026-03-25T09:33:26.4454504Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-25 15:03:27",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-25T07:47:25.5000000Z\r\nAdditional Information: 2026-03-24T16:40:29.0609769Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-25 13:17:25",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-24T13:30:27.5000000Z\r\nAdditional Information: 2026-03-24T12:58:16.5214360Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-24 19:00:27",
-        "ip_address": "nan"
-    },
-    {
-        "type": "Suspicious Keyword Detected",
-        "severity": "Critical",
-        "username": "Unknown",
-        "description": "Suspicious keyword found in log by 'Unknown': Possible detection of CVE: 2026-03-24T12:10:29.5000000Z\r\nAdditional Information: 2026-03-23T16:04:26.6673210Z\r\n\r\nThis Ev",
-        "timestamp": "2026-03-24 17:40:29",
-        "ip_address": "nan"
+        "type": "Session Anomaly",
+        "severity": "Low",
+        "username": "zxcvm",
+        "description": "'zxcvm' has 8 logouts but only 0 logins \u2014 possible session hijacking or log tampering.",
+        "timestamp": "2026-04-12 23:58:45.066569",
+        "count": 8
     }
 ]
