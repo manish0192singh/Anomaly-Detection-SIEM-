@@ -18,6 +18,7 @@ import json
 import os
 import requests
 from collections import Counter
+from datetime import timezone, timedelta
 
 # Server URL — read from Render environment variable
 SERVER_URL = os.getenv("SERVER_URL", "http://localhost:8000")
@@ -460,7 +461,8 @@ else:
 
     # ── Overview Dashboard Page ───────────────────────────────────────
     if menu == "Dashboard":
-        now = datetime.datetime.now()
+        IST = timezone(timedelta(hours=5, minutes=30))
+        now = datetime.datetime.now(IST)
 
         # Page header with timestamp and status badge
         st.markdown(

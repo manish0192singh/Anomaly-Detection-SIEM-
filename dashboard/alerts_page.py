@@ -76,7 +76,7 @@ def alerts_page(alerts=None):
     st.subheader("📋 Alert Details")
     display_cols = [c for c in ["timestamp","severity","type","username","ip_address","message","mitre_tactic","source","risk_score"] if c in filtered.columns]
 
-    def color_severity(val):
+    def color_severity(val): 
         colors = {
             "Critical": "background-color:#fecaca;color:#991b1b",
             "High":     "background-color:#fed7aa;color:#9a3412",
