@@ -20,7 +20,6 @@ def load_settings():
         return DEFAULT_SETTINGS
 
 def save_settings(settings):
-    os.makedirs("data", exist_ok=True)   # ✅ ensures data folder exists
     with open(SETTINGS_FILE, "w") as f:
         json.dump(settings, f, indent=4)
 
@@ -47,6 +46,7 @@ def settings_page():
 
     st.info("""
     These settings control how many logs your system collects and how long old logs are kept.
+    Notification settings have been removed to simplify the application.
     """)
 
     if st.button("💾 Save Settings"):

@@ -13,11 +13,6 @@ import platform
 import random
 from datetime import datetime, timedelta
 
-# Load settings for log limit
-from settings_loader import get_settings
-settings = get_settings()
-LOG_LIMIT = settings.get("log_limit", 5000)
-
 # Try to import Windows-only library
 if platform.system() == "Windows":
     try:
@@ -37,7 +32,7 @@ class WindowsLogCollector:
     def __init__(self):
         self.channels    = ["Security", "System", "Application"]
         self.output_path = "../data/processed_logs.csv"
-        self.max_records = LOG_LIMIT   # ← ONLY CHANGE HERE
+        self.max_records = 5000  # max logs per channel
 
     # ── Real Windows Log Collection ───────────────────────────────────
 
@@ -52,7 +47,7 @@ class WindowsLogCollector:
                 flags  = (win32evtlog.EVENTLOG_BACKWARDS_READ |
                           win32evtlog.EVENTLOG_SEQUENTIAL_READ)
 
-                while count < self.max_records:   # ← UPDATED TO USE LOG LIMIT
+                while count < self.max_records:
                     events = win32evtlog.ReadEventLog(handle, flags, 0)
                     if not events:
                         break
@@ -61,6 +56,7 @@ class WindowsLogCollector:
                         if count >= self.max_records:
                             break
 
+                        # Try to get the full event message
                         try:
                             message = win32evtlogutil.SafeFormatMessage(event, channel)
                         except Exception:
@@ -72,10 +68,10 @@ class WindowsLogCollector:
                         logs.append({
                             "timestamp":  str(event.TimeGenerated),
                             "source":     channel,
-                            "event_id":   event.EventID & 0xFFFF,
+                            "event_id":   event.EventID & 0xFFFF,  # clean up event ID
                             "event_type": event.EventType,
                             "computer":   event.ComputerName,
-                            "message":    message.strip()[:500],
+                            "message":    message.strip()[:500],   # cap message length
                         })
                         count += 1
 
@@ -90,6 +86,11 @@ class WindowsLogCollector:
     # ── Demo Data (used on non-Windows systems) ───────────────────────
 
     def generate_demo_logs(self):
+        """
+        Generate realistic fake log data for demonstration purposes.
+        Mostly normal office activity with 1 small attack sequence
+        injected so the detection system has something to find.
+        """
         print("  [INFO] Generating demo log data...")
 
         random.seed(42)
@@ -101,27 +102,26 @@ class WindowsLogCollector:
         ips       = ["192.168.1.101", "192.168.1.102", "192.168.1.103",
                      "192.168.1.104", "192.168.1.10"]
 
+        # (event_id, event_type) pairs with realistic frequency weights
         event_profiles = [
-            (4624, 1),
-            (4634, 1),
-            (4688, 1),
-            (4663, 1),
-            (4625, 2),
-            (4648, 2),
-            (4720, 4),
-            (4672, 3),
-            (4740, 3),
-            (5140, 2),
+            (4624, 1),  # Successful Login  — very common
+            (4634, 1),  # Logout            — very common
+            (4688, 1),  # Process Created   — common
+            (4663, 1),  # File Access       — common
+            (4625, 2),  # Failed Login      — occasional
+            (4648, 2),  # Explicit Creds    — occasional
+            (4720, 4),  # Account Created   — rare
+            (4672, 3),  # Privilege Use     — rare
+            (4740, 3),  # Account Locked    — rare
+            (5140, 2),  # Network Share     — occasional
         ]
         weights = [35, 25, 15, 10, 5, 3, 1, 2, 1, 3]
 
         logs = []
         base = datetime.now()
 
-        # Respect LOG LIMIT for demo logs too
-        max_entries = LOG_LIMIT
-
-        for _ in range(max_entries):
+        for _ in range(2000):
+            # 85% business hours (8am-6pm), 15% off-hours
             if random.random() < 0.85:
                 hour = random.randint(8, 18)
             else:
@@ -147,6 +147,7 @@ class WindowsLogCollector:
                 "message":    _build_message(eid, user, ip, comp),
             })
 
+        # Add 1 realistic attack sequence for demonstration
         logs = _inject_attack(logs, base, users[0], "203.0.113.45")
 
         df = pd.DataFrame(logs).sort_values("timestamp").reset_index(drop=True)
@@ -161,6 +162,7 @@ class WindowsLogCollector:
         print(f"[OK] Logs saved -> {self.output_path}  ({len(df)} rows)")
 
     def run(self):
+        # Use real logs on Windows, demo data on everything else
         df = self.read_windows_logs() if WINDOWS_AVAILABLE else self.generate_demo_logs()
 
         if df.empty:
@@ -174,6 +176,7 @@ class WindowsLogCollector:
 # ── Helpers ───────────────────────────────────────────────────────────
 
 def _build_message(event_id, user, ip, computer):
+    """Build a realistic Windows Event Log message for a given event ID."""
     templates = {
         4624: f"An account was successfully logged on.\nAccount Name: {user}\nSource Network Address: {ip}\nWorkstation Name: {computer}\nLogon Type: 2",
         4625: f"An account failed to log on.\nAccount Name: {user}\nSource Network Address: {ip}\nFailure Reason: Unknown user name or bad password\nLogon Type: 2",
@@ -190,8 +193,16 @@ def _build_message(event_id, user, ip, computer):
 
 
 def _inject_attack(logs, base, attacker, attack_ip):
+    """
+    Inject a small realistic attack sequence into the demo data:
+    - 6 failed logins        → triggers brute force rule
+    - 1 successful login     → triggers brute force success rule
+    - 1 privilege escalation → triggers privilege escalation rule
+    Total: 8 suspicious events out of ~2000 (realistic 0.4% anomaly rate)
+    """
     t = (base - timedelta(days=1)).replace(hour=23, minute=5, second=0)
 
+    # 6 failed logins from an external IP address
     for i in range(6):
         logs.append({
             "timestamp":  (t + timedelta(seconds=i * 20)).strftime("%Y-%m-%d %H:%M:%S"),
@@ -202,6 +213,7 @@ def _inject_attack(logs, base, attacker, attack_ip):
             "message":    f"An account failed to log on.\nAccount Name: {attacker}\nSource Network Address: {attack_ip}\nFailure Reason: Wrong password\nLogon Type: 3",
         })
 
+    # Successful login after brute force
     logs.append({
         "timestamp":  (t + timedelta(seconds=140)).strftime("%Y-%m-%d %H:%M:%S"),
         "source":     "Security",
@@ -211,6 +223,7 @@ def _inject_attack(logs, base, attacker, attack_ip):
         "message":    f"An account was successfully logged on.\nAccount Name: {attacker}\nSource Network Address: {attack_ip}\nLogon Type: 3",
     })
 
+    # Privilege escalation after getting in
     logs.append({
         "timestamp":  (t + timedelta(seconds=180)).strftime("%Y-%m-%d %H:%M:%S"),
         "source":     "Security",
@@ -224,4 +237,5 @@ def _inject_attack(logs, base, attacker, attack_ip):
 
 
 if __name__ == "__main__":
-    pass
+    collector = WindowsLogCollector()
+    collector.run()
